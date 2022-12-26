@@ -1,0 +1,13 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Pod-Class Solgov Explorer",
+	"map_short_name": "SolGov Explo-Pod",
+	"map_path": "_maps/shuttles/shiptest/solgov_exploration_pod.dmm",
+	"job_slots": {
+		"Sailor": {
+			"outfit": "/datum/outfit/job/assistant/solgov",
+			"slots": 3
+		}
+	},
+	"enabled": true
+}

@@ -1,0 +1,6 @@
+<!-- Most valid html will work in here, excluding images. -->
+
+<h1 style="color:darkred;">Welcome to alt's Unofficial Shiptest!</h1>
+
+<p>This server is running a Shiptest White Sands SS13 Git build.</p>
+<p>https://github.com/shiptest-ss13/Shiptest</p>

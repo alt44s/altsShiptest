@@ -1,0 +1,18 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Caravan-class Interplanetary Cargo Ship",
+	"map_short_name": "Caravan-class Cargo Ship",
+	"map_path": "_maps/shuttles/shiptest/independent_caravan_victim.dmm",
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/quartermaster",
+			"officer": true,
+			"slots": 1
+		},
+		"Cargo Technician": {
+			"outfit": "/datum/outfit/job/cargo_tech",
+			"slots": 3
+		}
+	},
+	"enabled": true
+}
