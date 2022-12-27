@@ -18,11 +18,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
-"i" = (
-/obj/structure/window/reinforced/fulltile/shuttle,
-/obj/structure/sign/poster/official/solgov_enlist,
-/turf/open/floor/plating,
-/area/ship/bridge)
 "j" = (
 /obj/machinery/computer/helm{
 	dir = 4
@@ -50,33 +45,6 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "y" = (
-/obj/machinery/power/apc/auto_name/north,
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/port_gen/pacman/super,
-/turf/open/floor/plating,
-/area/ship/bridge)
-"z" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
-"B" = (
-/obj/machinery/power/terminal{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/holopad/emergency/command,
-/turf/open/floor/mineral/titanium/yellow,
-/area/ship/bridge)
-"E" = (
 /obj/item/pickaxe/drill,
 /obj/item/pickaxe/drill,
 /obj/item/pickaxe/drill,
@@ -113,7 +81,41 @@
 /obj/item/ammo_box/magazine/pistol556mm,
 /obj/item/stack/sheet/mineral/uranium,
 /obj/item/stack/sheet/mineral/uranium,
-/turf/open/floor/mineral/titanium/blue,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/ship/bridge)
+"z" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
+"A" = (
+/obj/structure/sign/poster/official/solgov_enlist,
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
+"B" = (
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/mineral/titanium/yellow,
+/area/ship/bridge)
+"E" = (
+/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/port_gen/pacman/super,
+/turf/open/floor/plating,
 /area/ship/bridge)
 "G" = (
 /obj/machinery/door/airlock/titanium,
@@ -150,6 +152,10 @@
 /obj/machinery/light/floor,
 /turf/open/floor/mineral/titanium/yellow,
 /area/ship/bridge)
+"W" = (
+/obj/item/radio/intercom/wideband,
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
 "Y" = (
 /obj/machinery/computer/cryopod,
 /turf/closed/wall/mineral/titanium,
@@ -162,16 +168,16 @@ d
 a
 "}
 (2,1,1) = {"
-i
+a
 E
 j
 d
 "}
 (3,1,1) = {"
-a
+W
 y
 J
-a
+A
 "}
 (4,1,1) = {"
 Y

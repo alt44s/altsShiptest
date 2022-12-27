@@ -1,0 +1,22 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Dropship-class Military Vessel",
+	"map_short_name": "Dropship-class",
+	"map_path": "_maps/shuttles/shiptest/syndicate_dropship.dmm",
+	"job_slots": {
+		"Syndicate Dropship Commander": {
+			"outfit": "/datum/outfit/job/captain/syndicate",
+			"officer": true,
+			"slots": 1
+		},
+		"Syndicate Dropship Pilot": {
+			"outfit": "/datum/outfit/job/security/syndicate/gorlex",
+			"slots": 1
+		},
+		"Syndicate Assault Operative": {
+			"outfit": "/datum/outfit/job/security/syndicate/gorlex",
+			"slots": 4
+		}
+	},
+	"enabled": true
+}

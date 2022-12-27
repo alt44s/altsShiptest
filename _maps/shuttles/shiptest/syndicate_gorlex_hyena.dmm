@@ -2104,7 +2104,7 @@
 /obj/item/clothing/mask/breath,
 /obj/machinery/suit_storage_unit/inherit/industrial{
 	req_access = null;
-	req_one_access = list(48, 56)
+	req_one_access = list(48,56)
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage)
@@ -2281,8 +2281,9 @@
 	dir = 8;
 	pixel_x = 25
 	},
-/obj/structure/weightmachine/weightlifter,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/structure/table,
+/obj/machinery/jukebox/boombox,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "Lj" = (
@@ -2986,7 +2987,7 @@
 /obj/item/clothing/mask/breath,
 /obj/machinery/suit_storage_unit/inherit/industrial{
 	req_access = null;
-	req_one_access = list(48, 56)
+	req_one_access = list(48,56)
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage)

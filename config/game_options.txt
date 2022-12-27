@@ -569,10 +569,10 @@ ECONOMY
 MAX_OVERMAP_EVENT_CLUSTERS 6
 
 ## Put the maximum amount of overmap events here
-MAX_OVERMAP_EVENTS 50
+MAX_OVERMAP_EVENTS 150
 
 ## Put the maximum amount of dynamic overmap locations here
-MAX_OVERMAP_DYNAMIC_EVENTS 10
+MAX_OVERMAP_DYNAMIC_EVENTS 15
 
 ## Size of the overmap squared
 OVERMAP_SIZE 24
