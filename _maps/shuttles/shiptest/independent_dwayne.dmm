@@ -1580,6 +1580,7 @@
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 1
 	},
+/mob/living/simple_animal/bot/janitor,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "Jg" = (

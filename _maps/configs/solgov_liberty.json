@@ -30,5 +30,6 @@
 			"outfit": "/datum/outfit/job/assistant/solgov",
 			"slots": 4
 		}
-	}
+	},
+	"enabled": true
 }

@@ -2435,7 +2435,7 @@
 /turf/open/floor/engine,
 /area/ship/engineering)
 "vK" = (
-/obj/machinery/power/supermatter_crystal/shard/engine,
+/obj/machinery/power/supermatter_crystal/engine,
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
 "vQ" = (
@@ -3838,9 +3838,7 @@
 /area/ship/engineering/engine)
 "IC" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = list(150)
-	},
+/obj/structure/closet/secure_closet/miner,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "IN" = (
@@ -5134,9 +5132,7 @@
 /turf/open/floor/carpet/nanoweave/red,
 /area/ship/crew/dorm)
 "TK" = (
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = list(150)
-	},
+/obj/machinery/autolathe,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "TN" = (

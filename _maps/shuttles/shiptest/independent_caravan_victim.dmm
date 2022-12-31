@@ -144,12 +144,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew)
-"dg" = (
-/obj/machinery/computer/cryopod{
-	dir = 1
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/cargo)
 "ec" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -949,6 +943,7 @@
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 8
 	},
+/obj/item/storage/box/stockparts/basic,
 /turf/open/floor/plasteel/dark/airless,
 /area/ship/cargo)
 "Fv" = (
@@ -1240,6 +1235,10 @@
 	},
 /obj/machinery/cryopod{
 	dir = 1
+	},
+/obj/machinery/computer/cryopod{
+	dir = 1;
+	pixel_y = -25
 	},
 /turf/open/floor/plasteel/dark/airless,
 /area/ship/crew)
@@ -1675,7 +1674,7 @@ Lt
 GJ
 Rw
 PM
-dg
+WI
 Qk
 ct
 Zk

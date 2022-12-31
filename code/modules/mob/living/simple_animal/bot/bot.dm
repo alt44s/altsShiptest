@@ -206,47 +206,49 @@
 	qdel(src)
 
 /mob/living/simple_animal/bot/emag_act(mob/user)
-	if(locked) //First emag application unlocks the bot's interface. Apply a screwdriver to use the emag again.
-		locked = FALSE
-		emagged = 1
-		to_chat(user, "<span class='notice'>You bypass [src]'s controls.</span>")
-		return
-	if(!locked && open) //Bot panel is unlocked by ID or emag, and the panel is screwed open. Ready for emagging.
-		emagged = 2
-		remote_disabled = 1 //Manually emagging the bot locks out the AI built in panel.
-		locked = TRUE //Access denied forever!
-		bot_reset()
-		turn_on() //The bot automatically turns on when emagged, unless recently hit with EMP.
-		to_chat(src, "<span class='userdanger'>(#$*#$^^( OVERRIDE DETECTED</span>")
-		if(user)
-			log_combat(user, src, "emagged")
-		return
-	else //Bot is unlocked, but the maint panel has not been opened with a screwdriver yet.
-		to_chat(user, "<span class='warning'>You need to open maintenance panel first!</span>")
+	if (mob_biotypes == MOB_ROBOTIC)
+		if(locked) //First emag application unlocks the bot's interface. Apply a screwdriver to use the emag again.
+			locked = FALSE
+			emagged = 1
+			to_chat(user, "<span class='notice'>You bypass [src]'s controls.</span>")
+			return
+		if(!locked && open) //Bot panel is unlocked by ID or emag, and the panel is screwed open. Ready for emagging.
+			emagged = 2
+			remote_disabled = 1 //Manually emagging the bot locks out the AI built in panel.
+			locked = TRUE //Access denied forever!
+			bot_reset()
+			turn_on() //The bot automatically turns on when emagged, unless recently hit with EMP.
+			to_chat(src, "<span class='userdanger'>(#$*#$^^( OVERRIDE DETECTED</span>")
+			if(user)
+				log_combat(user, src, "emagged")
+			return
+		else //Bot is unlocked, but the maint panel has not been opened with a screwdriver yet.
+			to_chat(user, "<span class='warning'>You need to open maintenance panel first!</span>")
 
 /mob/living/simple_animal/bot/examine(mob/user)
 	. = ..()
-	if(health < maxHealth)
-		if(health > maxHealth/3)
-			. += "[src]'s parts look loose."
+	if (mob_biotypes == MOB_ROBOTIC)
+		if(health < maxHealth)
+			if(health > maxHealth/3)
+				. += "[src]'s parts look loose."
+			else
+				. += "[src]'s parts look very loose!"
 		else
-			. += "[src]'s parts look very loose!"
-	else
-		. += "[src] is in pristine condition."
-	. += "<span class='notice'>Its maintenance panel is [open ? "open" : "closed"].</span>"
-	. += "<span class='info'>You can use a <b>screwdriver</b> to [open ? "close" : "open"] it.</span>"
-	if(open)
-		. += "<span class='notice'>Its control panel is [locked ? "locked" : "unlocked"].</span>"
-		var/is_sillycone = issilicon(user)
-		if(!emagged && (is_sillycone || user.Adjacent(src)))
-			. += "<span class='info'>Alt-click [is_sillycone ? "" : "or use your ID on "]it to [locked ? "un" : ""]lock its control panel.</span>"
-	if(paicard)
-		. += "<span class='notice'>It has a pAI device installed.</span>"
-		if(!open)
-			. += "<span class='info'>You can use a <b>hemostat</b> to remove it.</span>"
+			. += "[src] is in pristine condition."
+		. += "<span class='notice'>Its maintenance panel is [open ? "open" : "closed"].</span>"
+		. += "<span class='info'>You can use a <b>screwdriver</b> to [open ? "close" : "open"] it.</span>"
+		if(open)
+			. += "<span class='notice'>Its control panel is [locked ? "locked" : "unlocked"].</span>"
+			var/is_sillycone = issilicon(user)
+			if(!emagged && (is_sillycone || user.Adjacent(src)))
+				. += "<span class='info'>Alt-click [is_sillycone ? "" : "or use your ID on "]it to [locked ? "un" : ""]lock its control panel.</span>"
+		if(paicard)
+			. += "<span class='notice'>It has a pAI device installed.</span>"
+			if(!open)
+				. += "<span class='info'>You can use a <b>hemostat</b> to remove it.</span>"
 
 /mob/living/simple_animal/bot/adjustHealth(amount, updating_health = TRUE, forced = FALSE)
-	if(amount>0 && prob(10))
+	if(amount>0 && prob(10) && mob_biotypes == MOB_ROBOTIC)
 		new /obj/effect/decal/cleanable/oil(loc)
 	. = ..()
 
@@ -328,7 +330,7 @@
 	return TRUE
 
 /mob/living/simple_animal/bot/attackby(obj/item/W, mob/user, params)
-	if(W.tool_behaviour == TOOL_SCREWDRIVER)
+	if(W.tool_behaviour == TOOL_SCREWDRIVER && mob_biotypes == MOB_ROBOTIC)
 		if(!locked)
 			open = !open
 			to_chat(user, "<span class='notice'>The maintenance panel is now [open ? "opened" : "closed"].</span>")
@@ -349,7 +351,7 @@
 					ejectpai(user)
 	else
 		user.changeNext_move(CLICK_CD_MELEE)
-		if(W.tool_behaviour == TOOL_WELDER && user.a_intent != INTENT_HARM)
+		if(W.tool_behaviour == TOOL_WELDER && user.a_intent != INTENT_HARM && mob_biotypes == MOB_ROBOTIC)
 			if(health >= maxHealth)
 				to_chat(user, "<span class='warning'>[src] does not need a repair!</span>")
 				return
@@ -361,12 +363,12 @@
 				adjustHealth(-10)
 				user.visible_message("<span class='notice'>[user] repairs [src]!</span>","<span class='notice'>You repair [src].</span>")
 		else
-			if(W.force) //if force is non-zero
+			if(W.force && mob_biotypes == MOB_ROBOTIC) //if force is non-zero
 				do_sparks(5, TRUE, src)
 			..()
 
 /mob/living/simple_animal/bot/bullet_act(obj/projectile/Proj)
-	if(Proj && (Proj.damage_type == BRUTE || Proj.damage_type == BURN))
+	if(Proj && mob_biotypes == MOB_ROBOTIC && (Proj.damage_type == BRUTE || Proj.damage_type == BURN))
 		if(prob(75) && Proj.damage > 0)
 			do_sparks(5, TRUE, src)
 	return ..()

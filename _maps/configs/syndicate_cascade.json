@@ -28,5 +28,6 @@
 			"outfit": "/datum/outfit/job/paramedic/syndicate/gorlex",
 			"slots": 1
 		}
-	}
+	},
+	"enabled": true
 }

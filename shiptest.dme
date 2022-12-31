@@ -2512,6 +2512,14 @@
 #include "code\modules\mob\living\carbon\monkey\monkey_defense.dm"
 #include "code\modules\mob\living\carbon\monkey\punpun.dm"
 #include "code\modules\mob\living\carbon\monkey\update_icons.dm"
+
+#include "code\modules\mob\living\carbon\npc\jonathanbanks\jonathanbanks_combat.dm"
+#include "code\modules\mob\living\carbon\npc\jonathanbanks\jonathanbanks.dm"
+#include "code\modules\mob\living\carbon\npc\jonathanbanks\jonathanbanks_defense.dm"
+#include "code\modules\mob\living\carbon\npc\jonathanbanks\jonathanbanks_inventory.dm"
+#include "code\modules\mob\living\simple_animal\npc\janitor\janitor.dm"
+#include "code\modules\mob\living\simple_animal\npc\basichuman\basichuman.dm"
+
 #include "code\modules\mob\living\silicon\damage_procs.dm"
 #include "code\modules\mob\living\silicon\death.dm"
 #include "code\modules\mob\living\silicon\examine.dm"

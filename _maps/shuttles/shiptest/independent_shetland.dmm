@@ -3448,6 +3448,11 @@
 /obj/effect/turf_decal/box,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
+"It" = (
+/obj/effect/turf_decal/corner/opaque/red/diagonal,
+/mob/living/simple_animal/bot/janitor,
+/turf/open/floor/plasteel/white,
+/area/ship/crew/canteen)
 "IB" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4044,7 +4049,7 @@
 	pixel_y = 8
 	},
 /obj/item/reagent_containers/glass/bottle{
-	list_reagents = list(/datum/reagent/medicine/thializid = 30);
+	list_reagents = list(/datum/reagent/medicine/thializid=30);
 	name = "thializid bottle"
 	},
 /obj/item/reagent_containers/syringe,
@@ -6135,7 +6140,7 @@ Qv
 oC
 yM
 rf
-Ui
+It
 VU
 ol
 Ph

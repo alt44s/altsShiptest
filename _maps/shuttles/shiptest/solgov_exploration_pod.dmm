@@ -84,6 +84,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/item/radio/intercom/wideband{
+	pixel_y = 25
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ship/bridge)
 "z" = (
@@ -150,15 +153,10 @@
 	},
 /obj/machinery/cryopod,
 /obj/machinery/light/floor,
+/obj/machinery/computer/cryopod{
+	pixel_y = 25
+	},
 /turf/open/floor/mineral/titanium/yellow,
-/area/ship/bridge)
-"W" = (
-/obj/item/radio/intercom/wideband,
-/turf/closed/wall/mineral/titanium,
-/area/ship/bridge)
-"Y" = (
-/obj/machinery/computer/cryopod,
-/turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
 
 (1,1,1) = {"
@@ -174,13 +172,13 @@ j
 d
 "}
 (3,1,1) = {"
-W
+a
 y
 J
 A
 "}
 (4,1,1) = {"
-Y
+a
 U
 B
 G

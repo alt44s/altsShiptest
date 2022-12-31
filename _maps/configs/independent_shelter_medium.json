@@ -1,0 +1,13 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Shelter-class Medium Survival Pod",
+	"map_short_name": "Medium Shelter-Pod",
+	"map_path": "_maps/shuttles/shiptest/nanotrasen_shelter_medium.dmm",
+	"job_slots": {
+		"Shaft Miner": {
+			"outfit": "/datum/outfit/job/miner",
+			"slots": 3
+		}
+	},
+	"enabled": true
+}

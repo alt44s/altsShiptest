@@ -126,6 +126,10 @@
 /obj/machinery/cryopod{
 	dir = 1
 	},
+/obj/machinery/computer/cryopod{
+	dir = 1;
+	pixel_y = -25
+	},
 /turf/open/floor/pod/dark,
 /area/ship/crew)
 "ns" = (
@@ -171,8 +175,6 @@
 /obj/item/ammo_box/a357,
 /obj/item/storage/belt/military,
 /obj/item/clothing/shoes/jackboots,
-/obj/item/ammo_box/magazine/m556,
-/obj/item/ammo_box/magazine/m556,
 /obj/item/ammo_box/magazine/m556,
 /obj/item/ammo_box/magazine/m556,
 /obj/item/gun/ballistic/automatic/smg/m90/unrestricted,
@@ -261,6 +263,8 @@
 /obj/effect/turf_decal/corner/opaque/red{
 	dir = 4
 	},
+/obj/item/storage/toolbox/emergency,
+/obj/item/areaeditor/shuttle,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "wH" = (
@@ -286,12 +290,6 @@
 	specialfunctions = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/crew)
-"za" = (
-/obj/machinery/computer/cryopod{
-	dir = 1
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew)
 "Bp" = (
 /obj/effect/turf_decal/corner/opaque/red,
@@ -337,8 +335,6 @@
 /obj/item/clothing/under/syndicate/combat,
 /obj/item/ammo_box/magazine/m556,
 /obj/item/ammo_box/magazine/m556,
-/obj/item/ammo_box/magazine/m556,
-/obj/item/ammo_box/magazine/m556,
 /obj/item/gun/ballistic/automatic/smg/m90/unrestricted,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
@@ -381,9 +377,8 @@
 /obj/item/grenade/c4,
 /obj/item/ammo_box/magazine/m556,
 /obj/item/ammo_box/magazine/m556,
-/obj/item/ammo_box/magazine/m556,
-/obj/item/ammo_box/magazine/m556,
 /obj/item/gun/ballistic/automatic/smg/m90/unrestricted,
+/obj/item/storage/firstaid/lp,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
 "Gx" = (
@@ -464,7 +459,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 10
 	},
-/mob/living/simple_animal/bot/medbot/mysterious,
+/obj/structure/tank_dispenser,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "Jv" = (
@@ -509,8 +504,6 @@
 /obj/item/ammo_box/magazine/m556,
 /obj/item/ammo_box/magazine/m556,
 /obj/item/kitchen/knife/combat,
-/obj/item/ammo_box/magazine/m556,
-/obj/item/ammo_box/magazine/m556,
 /obj/item/gun/ballistic/automatic/smg/m90/unrestricted,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
@@ -549,7 +542,12 @@
 	dir = 4
 	},
 /obj/machinery/light/small,
-/obj/machinery/atmospherics/components/unary/tank/toxins,
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/toxins{
+	anchored = 1
+	},
 /turf/open/floor/plating,
 /area/ship/crew)
 "Rj" = (
@@ -560,8 +558,6 @@
 /area/ship/crew)
 "Sl" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/toolbox/emergency,
-/obj/item/wrench,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -712,7 +708,7 @@ US
 ZJ
 BQ
 ka
-za
+Tn
 "}
 (5,1,1) = {"
 Tn

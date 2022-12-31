@@ -46,6 +46,63 @@
 	key = "burp"
 	key_third_person = "burps"
 	message = "burps."
+	sound = 'sound/voice/burp.ogg'
+	cooldown = (1 SECONDS)
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/fart
+	key = "fart"
+	key_third_person = "farts"
+	message = "farts."
+	sound = 'sound/voice/fart.ogg'
+	cooldown = (1 SECONDS)
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/laugh2
+	key = "laugh2"
+	key_third_person = "laughs deviously"
+	message = "laughs deviously."
+	sound = 'sound/voice/goofylaugh.ogg'
+	cooldown = (15 SECONDS)
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/laugh3
+	key = "laugh3"
+	key_third_person = "laughs in chinese"
+	message = "laughs in chinese."
+	sound = 'sound/voice/jajaja.ogg'
+	cooldown = (5 SECONDS)
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/nomnom
+	key = "nomnom"
+	key_third_person = "finds the taste enjoyable"
+	message = "finds the taste enjoyable."
+	sound = 'sound/voice/nomnom.ogg'
+	cooldown = (15 SECONDS)
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/hello
+	key = "hello"
+	key_third_person = "says hello"
+	message = "says hello."
+	sound = 'sound/voice/hello.ogg'
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/bruh
+	key = "bruh"
+	key_third_person = "considers this a bruh moment"
+	message = "considers this a bruh moment."
+	sound = 'sound/voice/bruh.ogg'
+	cooldown = (15 SECONDS)
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/breakbad
+	key = "breakbad"
+	key_third_person = "breaks bad"
+	message = "breaks bad."
+	sound = 'sound/voice/breakbad.ogg'
+	cooldown = (30 SECONDS)
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/choke
