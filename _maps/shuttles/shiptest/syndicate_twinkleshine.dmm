@@ -1735,6 +1735,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/catwalk/over,
+/mob/living/simple_animal/bot/janitor,
 /turf/open/floor/plating,
 /area/ship/crew/dorm)
 "qj" = (

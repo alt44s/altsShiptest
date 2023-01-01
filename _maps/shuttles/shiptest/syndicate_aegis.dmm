@@ -4417,6 +4417,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/bot/janitor,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/hallway/central)
 "Qj" = (

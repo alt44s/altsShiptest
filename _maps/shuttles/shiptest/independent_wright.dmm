@@ -240,7 +240,7 @@
 "hz" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/drinkingglass{
-	list_reagents = list(/datum/reagent/consumable/ethanol/sugar_rush = 30);
+	list_reagents = list(/datum/reagent/consumable/ethanol/sugar_rush=30);
 	pixel_x = 3;
 	pixel_y = 4
 	},
@@ -570,7 +570,7 @@
 	dir = 4
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass{
-	list_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 30);
+	list_reagents = list(/datum/reagent/consumable/ethanol/whiskey=30);
 	pixel_x = -2;
 	pixel_y = 4
 	},
@@ -2227,6 +2227,7 @@
 "Yu" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/mob/living/simple_animal/bot/janitor,
 /turf/open/floor/wood,
 /area/ship/hallway/central)
 "YA" = (

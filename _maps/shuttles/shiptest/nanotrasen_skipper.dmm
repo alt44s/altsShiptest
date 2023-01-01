@@ -5942,6 +5942,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/mob/living/simple_animal/bot/janitor,
 /turf/open/floor/carpet/nanoweave,
 /area/ship/hallway/central)
 "ZO" = (

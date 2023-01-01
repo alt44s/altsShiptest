@@ -15,6 +15,9 @@
 
 	gender = MALE
 
+	var/listening = TRUE
+	var/recorded = "" //the activation message
+
 	verb_say = "says"
 	verb_ask = "asks"
 	verb_exclaim = "exclaims"
@@ -43,7 +46,7 @@
 
 	var/blood = 1
 	var/trash = 1
-	var/pests = 0
+	var/protect = 1
 	var/drawn = 1
 	var/follow = 0
 
@@ -59,10 +62,10 @@
 	var/next_dest
 	var/next_dest_loc
 
+	var/baton_type = /obj/item/mop
 	var/obj/item/weapon
 	var/weapon_orig_force = 0
 	var/chosen_name
-
 	melee_damage_lower = 10
 	melee_damage_upper = 10
 	attack_verb_continuous = "punches"
@@ -85,6 +88,7 @@
 	. = ..()
 
 	get_targets()
+	weapon = new baton_type()
 
 	var/datum/job/janitor/J = new/datum/job/janitor
 	access_card.access += J.get_access()
@@ -106,9 +110,6 @@
 		new /obj/item/reagent_containers/glass/bucket(Tsec)
 
 	if(prob(10))
-		new /obj/item/mop(Tsec)
-
-	if(prob(10))
 		drop_part(/obj/item/clothing/head/soft/purple, Tsec)
 
 	new /obj/effect/particle_effect/sparks/electricity(Tsec)
@@ -118,12 +119,12 @@
 
 /mob/living/simple_animal/bot/janitor/get_controls(mob/user)
 	var/dat
-	dat += "<BR>His abilities to take orders are [locked ? "locked" : "unlocked"]<BR>"
+	dat += "<BR>His abilities to take orders are [locked ? "locked" : "unlocked"].<BR>"
 	if(!locked || issilicon(user)|| isAdminGhostAI(user))
 		dat += "<BR>Clean Blood: <A href='?src=[REF(src)];operation=blood'>[blood ? "Yes" : "No"]</A>"
 		dat += "<BR>Clean Trash: <A href='?src=[REF(src)];operation=trash'>[trash ? "Yes" : "No"]</A>"
 		dat += "<BR>Clean Graffiti: <A href='?src=[REF(src)];operation=drawn'>[drawn ? "Yes" : "No"]</A>"
-		dat += "<BR>Exterminate Pests: <A href='?src=[REF(src)];operation=pests'>[pests ? "Yes" : "No"]</A>"
+		dat += "<BR>Protect: <A href='?src=[REF(src)];operation=protect'>[protect ? "Yes" : "No"]</A>"
 		dat += "<BR>Follow: <A href='?src=[REF(src)];operation=follow'>[follow ? "Yes" : "No"]</A>"
 	return dat
 
@@ -134,8 +135,8 @@
 		switch(href_list["operation"])
 			if("blood")
 				blood = !blood
-			if("pests")
-				pests = !pests
+			if("protect")
+				protect = !protect
 			if("trash")
 				trash = !trash
 			if("drawn")
@@ -188,13 +189,19 @@
 	if(!target && follow) //Search for humans to follow
 		target = scan(/mob/living/carbon/human)
 
-	if(!target && pests) //Search for pests to exterminate first.
-		target = scan(/mob/living/simple_animal)
+	if(!target && protect) //Search for pests to exterminate first.
+		target = scan(/mob/living/simple_animal/mouse)
+
+	if(!target && protect)
+		target = scan(/mob/living/carbon/monkey)
+
+	if(!target && protect)
+		target = scan(/mob/living/simple_animal/hostile)
 
 	if(!target) //Search for decals then.
 		target = scan(/obj/effect/decal/cleanable)
 
-	if(!target) //Checks for remains
+	if(!target) //Checks for remainsw
 		target = scan(/obj/effect/decal/remains)
 
 	if(!target && trash) //Then for trash.
@@ -216,7 +223,7 @@
 			mode = BOT_IDLE
 			return
 
-		if(loc == get_turf(target))
+		if(Adjacent(target) && isturf(target.loc))
 			if(!(check_bot(target) && prob(50)))	//Target is not defined at the parent. 50% chance to still try and clean so we dont get stuck on the last blood drop.
 				UnarmedAttack(target)	//Rather than check at every step of the way, let's check before we do an action, so we can rescan before the other bot.
 				if(QDELETED(target)) //We done here.
@@ -262,9 +269,10 @@
 		target_types += /obj/effect/decal/cleanable/blood
 		target_types += /obj/effect/decal/cleanable/trail_holder
 
-	if(pests)
-		target_types += /mob/living/simple_animal/hostile/cockroach
+	if(protect)
 		target_types += /mob/living/simple_animal/mouse
+		target_types += /mob/living/simple_animal/hostile
+		target_types += /mob/living/carbon/monkey
 
 	if(drawn)
 		target_types += /obj/effect/decal/cleanable/crayon
@@ -276,6 +284,11 @@
 	target_types = typecacheof(target_types)
 
 /mob/living/simple_animal/bot/janitor/UnarmedAttack(atom/A)
+	if (mode == BOT_CLEANING)
+		wander = 0
+	else if (mode == BOT_IDLE)
+		wander = 1
+
 	if(ismopable(A))
 		mode = BOT_CLEANING
 
@@ -286,14 +299,46 @@
 			target = null
 
 		mode = BOT_IDLE
-	else if(istype(A, /obj/item) || istype(A, /obj/effect/decal/remains))
-		visible_message("<span class='danger'>[src] sprays hydrofluoric acid at [A]!</span>")
-		playsound(src, 'sound/effects/spray2.ogg', 50, TRUE, -6)
-		A.acid_act(75, 10)
-		target = null
+	else if(istype(A, /obj/item) || istype(A, /obj/effect/decal/remains) || istype(A, /mob/living/carbon/monkey) || istype(A, /mob/living/simple_animal/hostile))
+		if(iscarbon(A))
+			var/mob/living/carbon/monkey/C = A
+			if(!C.stat && !C.client)
+				visible_message("<span class='danger'>[src] sprays hydrofluoric acid at [A]!</span>")
+				playsound(src, 'sound/effects/spray2.ogg', 50, TRUE, -6)
+//				weapon.attack(A, src)
+				A.acid_act(75, 10)
+				target = null
+		if(ishostile(A))
+			var/mob/living/simple_animal/hostile/D = A
+			if(!D.stat)
+				visible_message("<span class='danger'>[src] sprays hydrofluoric acid at [A]!</span>")
+				playsound(src, 'sound/effects/spray2.ogg', 50, TRUE, -6)
+				A.acid_act(35, 10)
+				target = null
+		else if (!isliving(A))
+			visible_message("<span class='danger'>[src] sprays hydrofluoric acid at [A]!</span>")
+			playsound(src, 'sound/effects/spray2.ogg', 50, TRUE, -6)
+			A.acid_act(75, 10)
+			target = null
 	else if(istype(A, /mob/living/simple_animal/hostile/cockroach) || istype(A, /mob/living/simple_animal/mouse))
 		var/mob/living/simple_animal/M = target
 		if(!M.stat)
 			visible_message("<span class='danger'>[src] smashes [target] with his mop!</span>")
 			M.death()
 		target = null
+
+/mob/living/simple_animal/bot/janitor/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, list/message_mods = list())
+	. = ..()
+	if(speaker == src)
+		return
+
+	if(listening && !radio_freq)
+		record_speech(speaker, raw_message, message_language)
+
+/mob/living/simple_animal/bot/janitor/proc/record_speech(atom/movable/speaker, raw_message, datum/language/message_language)
+	recorded = raw_message
+
+/mob/living/simple_animal/bot/janitor/proc/check_activation(atom/movable/speaker, raw_message)
+
+	if(raw_message == "Say.")
+		visible_message("<span class='boldannounce'> likes to clean shit</span>")
