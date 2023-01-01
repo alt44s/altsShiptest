@@ -1,4 +1,4 @@
-# alt's Shiptest Codebase
+# alt's Shiptest Fork
 
 -   **Original Shiptest Codebase** <https://github.com/shiptest-ss13/Shiptest>
 -   **Wiki:** <https://shiptest.net/wiki>
