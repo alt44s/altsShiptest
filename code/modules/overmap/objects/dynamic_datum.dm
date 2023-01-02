@@ -14,7 +14,7 @@
 	///The docking port in the reserve
 	var/list/obj/docking_port/stationary/reserve_docks
 	///If the level should be preserved. Useful for if you want to build a colony or something.
-	var/preserve_level = FALSE
+	var/preserve_level = TRUE
 	///What kind of planet the level is, if it's a planet at all.
 	var/planet
 	///Planet's flavor name, if it is a planet.
@@ -131,7 +131,7 @@
 	switch(chosen)
 		if(DYNAMIC_WORLD_LAVA)
 			Rename("lava planet")
-			token.desc = "A very weak energy signal originating from a planet with lots of seismic and volcanic activity."
+			token.desc = "An energy signal originating from a planet with lots of seismic and volcanic activity."
 			planet = DYNAMIC_WORLD_LAVA
 			token.icon_state = "globe"
 			token.color = COLOR_ORANGE
@@ -145,7 +145,7 @@
 			weather_controller_type = /datum/weather_controller/lavaland
 		if(DYNAMIC_WORLD_ICE)
 			Rename("frozen planet")
-			token.desc = "A very weak energy signal originating from a planet with traces of water and extremely low temperatures."
+			token.desc = "An energy signal originating from a planet with traces of water and extremely low temperatures."
 			planet = DYNAMIC_WORLD_ICE
 			token.icon_state = "globe"
 			token.color = COLOR_BLUE_LIGHT
@@ -159,7 +159,7 @@
 			weather_controller_type = /datum/weather_controller/snow_planet
 		if(DYNAMIC_WORLD_JUNGLE)
 			Rename("jungle planet")
-			token.desc = "A very weak energy signal originating from a planet teeming with life."
+			token.desc = "An energy signal originating from a planet teeming with life."
 			planet = DYNAMIC_WORLD_JUNGLE
 			token.icon_state = "globe"
 			token.color = COLOR_LIME
@@ -173,7 +173,7 @@
 			weather_controller_type = /datum/weather_controller/lush
 		if(DYNAMIC_WORLD_SAND)
 			Rename("sand planet")
-			token.desc = "A very weak energy signal originating from a planet with many traces of silica."
+			token.desc = "An energy signal originating from a planet with many traces of silica."
 			planet = DYNAMIC_WORLD_SAND
 			token.icon_state = "globe"
 			token.color = COLOR_GRAY
@@ -187,7 +187,7 @@
 			weather_controller_type = /datum/weather_controller/desert
 		if(DYNAMIC_WORLD_WASTEPLANET)
 			Rename("waste disposal planet")
-			token.desc = "A very weak energy signal originating from a planet marked as waste disposal."
+			token.desc = "An energy signal originating from a planet marked as waste disposal."
 			planet = DYNAMIC_WORLD_WASTEPLANET
 			token.icon_state = "globe"
 			token.color = "#a9883e"
@@ -201,7 +201,7 @@
 			//planet_template = /datum/planet/lava //TODO, MAKE NEW PLANET TEMPLATE
 		if(DYNAMIC_WORLD_ROCKPLANET)
 			Rename("rock planet")
-			token.desc = "A very weak energy signal originating from a iron rich and rocky planet."
+			token.desc = "An energy signal originating from a iron rich and rocky planet."
 			planet = DYNAMIC_WORLD_ROCKPLANET
 			token.icon_state = "globe"
 			token.color = "#bd1313"
@@ -215,7 +215,7 @@
 			planet_template = /datum/planet/rock
 		if(DYNAMIC_WORLD_BEACHPLANET)
 			Rename("beach planet")
-			token.desc = "A very weak energy signal originating from a warm, oxygen rich planet."
+			token.desc = "An energy signal originating from a warm, oxygen rich planet."
 			planet = DYNAMIC_WORLD_BEACHPLANET
 			token.icon_state = "globe"
 			token.color = "#c6b597"
@@ -252,7 +252,7 @@
 			weather_controller_type = null
 		if(DYNAMIC_WORLD_SPACERUIN)
 			Rename("weak energy signal")
-			token.desc = "A very weak energy signal emenating from space."
+			token.desc = "A very weak energy signal emanating from space."
 			planet = DYNAMIC_WORLD_SPACERUIN
 			token.icon_state = "strange_event"
 			token.color = null
@@ -273,7 +273,7 @@
 // #endif
 
 	if(!preserve_level)
-		token.desc += "It may not still be here if you leave it."
+		token.desc += " It may not still be here if you leave it."
 
 /datum/overmap/dynamic/proc/gen_planet_name()
 	. = ""

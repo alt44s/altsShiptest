@@ -178,6 +178,11 @@ Override makes it so the alert is not replaced until cleared by a clear_alert wi
 	desc = "You're severely malnourished. The hunger pains make moving around a chore."
 	icon_state = "starving"
 
+/atom/movable/screen/alert/deadly_starving
+	name = "Starving to death"
+	desc = "You're starving to death! It'd be best to find some food as soon as possible."
+	icon_state = "deadly_starving"
+
 /atom/movable/screen/alert/gross
 	name = "Grossed out."
 	desc = "That was kind of gross..."
@@ -192,6 +197,21 @@ Override makes it so the alert is not replaced until cleared by a clear_alert wi
 	name = "DISGUSTED"
 	desc = "ABSOLUTELY DISGUSTIN'"
 	icon_state = "gross3"
+
+/atom/movable/screen/alert/slightly_thirsty
+	name = "Slightly thirsty"
+	desc = "Some water would be a good idea right now."
+	icon_state = "slight_thirst"
+
+/atom/movable/screen/alert/thirsty
+	name = "Thirst"
+	desc = "You seriously need some water right about now."
+	icon_state = "thirst"
+
+/atom/movable/screen/alert/deadly_thirsty
+	name = "Heavy thirst"
+	desc = "You need water right now!"
+	icon_state = "deadly_thirst"
 
 /atom/movable/screen/alert/hot
 	name = "Too Hot"

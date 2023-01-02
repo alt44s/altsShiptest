@@ -27,6 +27,7 @@
 /obj/item/circuitboard/machine/circuit_imprinter,
 /obj/item/circuitboard/machine/autolathe,
 /obj/item/storage/box/stockparts/basic,
+/obj/item/circuitboard/computer/rdconsole,
 /turf/open/floor/plating,
 /area/ship/storage)
 "e" = (
@@ -87,7 +88,6 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/structure/closet/secure_closet/miner,
 /obj/item/mining_scanner,
 /obj/item/mining_scanner,
 /obj/item/gun/energy/kinetic_accelerator,
@@ -96,6 +96,14 @@
 /obj/item/clothing/suit/hooded/explorer,
 /obj/item/clothing/mask/gas/explorer,
 /obj/item/clothing/mask/gas/explorer,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson/prescription,
+/obj/structure/closet/secure_closet/miningcloset,
+/obj/item/survivalcapsule,
+/obj/item/shovel,
+/obj/item/pickaxe/mini,
+/obj/item/stack/sheet/mineral/sandbags,
+/obj/item/storage/box/emptysandbags,
 /turf/open/floor/plating,
 /area/ship/storage)
 "m" = (

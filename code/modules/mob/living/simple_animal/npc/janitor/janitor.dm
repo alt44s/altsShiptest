@@ -76,7 +76,7 @@
 
 	a_intent = INTENT_HELP
 	unsuitable_atmos_damage = 15
-	speak = list("Hello.", "Cleanin cleanin cleanin...", "Man this place is dirty", "How do you manage to leave so much dirt?", "This is the dirtiest place I've ever seen.", "Man I love cleaning.", "Scrub scrub scrub...", "Doo dee doo de doooo.", "I think I can clean this, yeah.", "I'm the best janitor ever.", "Wonder where our adventures will take us.", "I'll always be here, cleanin...", "Sup.")
+	speak = list("Hello.", "Cleanin cleanin cleanin...", "Man this place is dirty", "How do you manage to leave so much dirt?", "This is the dirtiest place I've ever seen.", "Man I love cleaning.", "Scrub scrub scrub...", "Doo dee doo de doooo.", "I think I can clean this, yeah.", "I'm the best janitor in this sector.", "Wonder where our adventures will take us.", "I'll always be here, cleanin...", "Sup.")
 	emote_see = list("checks for dirty spots.", "looks around.","hums a tune.")
 	loot = list(/obj/effect/gibspawner/human)
 	faction = list("neutral")

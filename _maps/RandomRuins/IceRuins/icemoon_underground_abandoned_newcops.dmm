@@ -290,6 +290,11 @@
 /obj/structure/rack,
 /turf/open/floor/plating,
 /area/ruin/powered)
+"me" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/corpse/syndicatecommando,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered)
 "mz" = (
 /obj/item/toy/cards/deck/syndicate{
 	pixel_x = -6;
@@ -417,6 +422,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/powered)
+"tB" = (
+/obj/effect/turf_decal/corner/transparent/bar,
+/obj/effect/turf_decal/corner/transparent/bar{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/corpse/syndicatesoldier,
+/turf/open/floor/plasteel,
+/area/ruin/powered)
 "tP" = (
 /obj/effect/turf_decal/corner/transparent/bar,
 /obj/effect/turf_decal/corner/transparent/bar{
@@ -509,6 +523,15 @@
 /obj/structure/closet/syndicate,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
+/area/ruin/powered)
+"yk" = (
+/obj/effect/turf_decal/corner/transparent/bar,
+/obj/effect/turf_decal/corner/transparent/bar{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/corpse/nanotrasenassaultsoldier,
+/turf/open/floor/plasteel,
 /area/ruin/powered)
 "yB" = (
 /obj/effect/turf_decal/industrial/warning/corner,
@@ -656,6 +679,7 @@
 	pixel_y = 28
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/corpse/nanotrasensoldier,
 /turf/open/floor/plasteel/freezer,
 /area/ruin/powered)
 "Ec" = (
@@ -880,6 +904,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ruin/powered)
+"Py" = (
+/obj/effect/turf_decal/corner/transparent/bar,
+/obj/effect/turf_decal/corner/transparent/bar{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/corpse/syndicatecommando,
+/turf/open/floor/plasteel,
+/area/ruin/powered)
 "PH" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Dormitories";
@@ -905,6 +938,11 @@
 /obj/item/chair/stool,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
+/area/ruin/powered)
+"QE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/corpse/nanotrasensoldier,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "QT" = (
 /obj/effect/turf_decal/corner/transparent/bar,
@@ -1580,7 +1618,7 @@ rG
 rG
 rG
 vV
-vV
+Cd
 vV
 vV
 vV
@@ -1649,10 +1687,10 @@ rG
 Fr
 fL
 LP
-Je
+Py
 mE
 AW
-LP
+QE
 AW
 KN
 ha
@@ -1751,7 +1789,7 @@ Wt
 Fh
 Xk
 lw
-Je
+yk
 Je
 cl
 LP
@@ -1789,7 +1827,7 @@ sW
 LP
 Qf
 Je
-Je
+tB
 LP
 Je
 Cd
@@ -1896,7 +1934,7 @@ WM
 Fr
 Cd
 eu
-LP
+QE
 LP
 Kk
 Fr
@@ -1931,7 +1969,7 @@ Fr
 vV
 YU
 LL
-ZU
+me
 JN
 Fr
 rG

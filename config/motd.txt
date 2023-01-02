@@ -2,5 +2,10 @@
 
 <h1 style="color:darkred;">Welcome to alt's Unofficial Shiptest!</h1>
 
-<p>This server is running a Shiptest White Sands SS13 Git build.</p>
+<p>This server is running a modified Shiptest White Sands SS13 Git build.</p>
 <p>https://github.com/shiptest-ss13/Shiptest</p>
+
+<h2 style="color:darkblue;"><strong>Some changes to this fork include:</strong></h2>
+<p><strong>1. New and previously disabled ships</strong></p>
+<p><strong>2. New mechanics</strong></p>
+<p><strong>3. General modifications</strong></p>

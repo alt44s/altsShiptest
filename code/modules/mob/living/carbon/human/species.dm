@@ -1419,6 +1419,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		hunger_rate *= H.physiology.hunger_mod
 		H.adjust_nutrition(-hunger_rate)
 
+	if(H.stat != DEAD)
+		H.adjust_thirst(-THIRST_FACTOR)
+		handle_thirst(H)
+		handle_hunger_damage(H)
 
 	if (H.nutrition > NUTRITION_LEVEL_FULL)
 		if(H.overeatduration < 600) //capped so people don't take forever to unfat
@@ -1463,8 +1467,56 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			H.clear_alert("nutrition")
 		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
 			H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
-		if(0 to NUTRITION_LEVEL_STARVING)
+		if(NUTRITION_LEVEL_DEADLY_STARVING to NUTRITION_LEVEL_STARVING)
 			H.throw_alert("nutrition", /atom/movable/screen/alert/starving)
+		if(0 to NUTRITION_LEVEL_DEADLY_STARVING)
+			H.throw_alert("nutrition", /atom/movable/screen/alert/deadly_starving)
+
+/datum/species/proc/handle_hunger_damage(mob/living/carbon/human/H)
+	if(!H.client || (H.client && (H.client.inactivity / 600 > 5))) // Let's not kill AFK mobs
+		return
+
+	switch(H.nutrition)
+		if(NUTRITION_LEVEL_DEADLY_STARVING to NUTRITION_LEVEL_STARVING) // Only capped stamina damage and sometimes oxygen. Not deadly.
+			if((H.getStaminaLoss() <= 59) && prob(5))
+				to_chat(H, "<span class='notice'>You feel weak...</span>")
+				H.adjustStaminaLoss(20, 0)
+			if((H.oxyloss <= 50) && prob(5))
+				to_chat(H, "<span class='notice'>Your head feels light...</span>")
+				H.adjustOxyLoss(10, 0)
+		if(0 to NUTRITION_LEVEL_DEADLY_STARVING) // Deadly. Deals toxin and brute damage.
+			if((H.getStaminaLoss() <= 74) && prob(12))
+				to_chat(H, "<span class='warning'>You feel weak...</span>")
+				H.adjustStaminaLoss(25, 0)
+			if(prob(8))
+				to_chat(H, "<span class='danger'>Your insides hurt a lot!</span>") // Give me better descriptions...
+				H.adjustBruteLoss(3, 0)
+			if(prob(33))
+				H.adjustToxLoss(1, 0)
+	return
+
+/datum/species/proc/handle_thirst(mob/living/carbon/human/H)
+	if(!H.client || (H.client && (H.client.inactivity / 600 > 5)))
+		return
+
+	switch(H.thirst)
+		if(THIRST_LEVEL_NORMAL to THIRST_LEVEL_FULL)
+			H.clear_alert("thirst")
+		if(THIRST_LEVEL_THIRSTY to THIRST_LEVEL_NORMAL)
+			H.throw_alert("thirst", /atom/movable/screen/alert/slightly_thirsty)
+		if(THIRST_LEVEL_DEADLY_THIRSTY to THIRST_LEVEL_THIRSTY)
+			H.throw_alert("thirst", /atom/movable/screen/alert/thirsty)
+			if((H.getStaminaLoss() <= 50) && prob(5))
+				to_chat(H, "<span class='warning'>You need some water...</span>")
+				H.adjustStaminaLoss(10, 0)
+		if(0 to THIRST_LEVEL_DEADLY_THIRSTY)
+			H.throw_alert("thirst", /atom/movable/screen/alert/deadly_thirsty)
+			if((H.getStaminaLoss() <= 90) && prob(12))
+				to_chat(H, "<span class='warning'>You feel weak...</span>")
+				H.adjustStaminaLoss(20, 0)
+			if(prob(33))
+				H.adjustToxLoss(1, 0)
+	return
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)
 	return 0

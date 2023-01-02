@@ -16,7 +16,7 @@ $include atmos_mix.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'Shiptest' with the name of your choice.
-SERVERNAME alt's Unofficial Shiptest (New ships included!)
+SERVERNAME alt's Unofficial Modified Shiptest (FREE VBUCKS PUNJABI HALAL 100%)
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 # SERVERSQLNAME shiptest

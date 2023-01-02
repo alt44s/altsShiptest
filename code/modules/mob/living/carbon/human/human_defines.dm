@@ -70,5 +70,7 @@
 	var/last_fire_update
 	var/account_id
 
+	var/thirst = THIRST_LEVEL_START
+
 	/// How many "units of blood" we have on our hands
 	var/blood_in_hands = 0

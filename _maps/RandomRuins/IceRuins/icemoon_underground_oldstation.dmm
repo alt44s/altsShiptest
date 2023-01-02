@@ -6048,9 +6048,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall,
 /area/ruin/space/has_grav/ancientstation/betacorridor)
-"nj" = (
-/turf/closed/mineral/snowmountain/cavern/icemoon,
-/area/icemoon/underground/unexplored)
 "nl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/corner/opaque/yellow{
@@ -7988,9 +7985,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/ancientstation/hydroponics)
-"GU" = (
-/turf/closed/wall,
-/area/ruin/space/has_grav/ancientstation/betastorage)
 "Hn" = (
 /turf/open/floor/engine/o2,
 /area/ruin/space/has_grav/ancientstation/atmo)
@@ -9184,11 +9178,11 @@ oJ
 lW
 sY
 dF
-nj
-nj
-nj
-nj
-nj
+lp
+lp
+lp
+lp
+lp
 WI
 nm
 nu
@@ -9421,15 +9415,15 @@ ch
 aj
 cj
 ch
-GU
-GU
-GU
-GU
-GU
-GU
+bG
+bG
+bG
+bG
+bG
+bG
 lX
-GU
-GU
+bG
+bG
 md
 nH
 ch
@@ -9513,7 +9507,7 @@ aa
 aa
 aa
 aa
-nj
+lp
 lg
 ch
 zJ
@@ -9527,7 +9521,7 @@ YN
 YN
 nE
 nG
-GU
+bG
 lg
 lg
 dF
@@ -9576,7 +9570,7 @@ oC
 YA
 On
 nF
-GU
+bG
 dF
 dF
 bf
@@ -9617,15 +9611,15 @@ ch
 np
 mV
 ch
-GU
+bG
 mf
-GU
-GU
+bG
+bG
 br
 bG
-GU
-GU
-GU
+bG
+bG
+bG
 lg
 lg
 dF
