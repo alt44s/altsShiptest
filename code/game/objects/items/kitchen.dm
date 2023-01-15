@@ -72,6 +72,7 @@
 /obj/item/kitchen/knife
 	name = "kitchen knife"
 	icon_state = "knife"
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR
 	item_state = "knife"
 	desc = "A general purpose Chef's Knife made by SpaceCook Incorporated. Guaranteed to stay sharp for years to come."
 	pickup_sound =  'sound/items/handling/knife1_pickup.ogg'

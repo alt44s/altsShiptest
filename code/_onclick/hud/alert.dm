@@ -180,7 +180,7 @@ Override makes it so the alert is not replaced until cleared by a clear_alert wi
 
 /atom/movable/screen/alert/deadly_starving
 	name = "Starving to death"
-	desc = "You're starving to death! It'd be best to find some food as soon as possible."
+	desc = "You're really starving now! It'd be best to find some food as soon as possible."
 	icon_state = "deadly_starving"
 
 /atom/movable/screen/alert/gross

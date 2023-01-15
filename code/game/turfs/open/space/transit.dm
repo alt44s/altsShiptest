@@ -6,6 +6,10 @@
 	flags_1 = NOJAUNT_1 //This line goes out to every wizard that ever managed to escape the den. I'm sorry.
 	explosion_block = INFINITY
 
+/turf/open/space/transit/examine(mob/user)
+	. = ..()
+	. += "<span class='warning'>You WILL fucking die if you step on this!!!</span>"
+
 /turf/open/space/transit/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	. = ..()
 	underlay_appearance.icon_state = "speedspace_ns_[get_transit_state(asking_turf)]"

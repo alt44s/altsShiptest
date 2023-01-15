@@ -20,6 +20,10 @@ SUBSYSTEM_DEF(materials)
 		new /datum/stack_recipe("Toilet", /obj/structure/toilet/greyscale, one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
 		new /datum/stack_recipe("Sink", /obj/structure/sink/greyscale, one_per_turf = TRUE, on_floor = TRUE, applies_mats = TRUE),
 		new /datum/stack_recipe("Material floor tile", /obj/item/stack/tile/material, 1, 4, 20, applies_mats = TRUE),
+		new /datum/stack_recipe("lighter", /obj/item/lighter/greyscale, 4, applies_mats = TRUE),
+		new /datum/stack_recipe("drinking Glass", /obj/item/reagent_containers/food/drinks/drinkingglass, 1, applies_mats = TRUE),
+		new /datum/stack_recipe("wall girders", /obj/structure/girder, 2, time = 40, one_per_turf = TRUE, on_floor = TRUE, trait_booster = TRAIT_QUICK_BUILD, trait_modifier = 0.75, applies_mats = TRUE),
+		new /datum/stack_recipe("knife", /obj/item/kitchen/knife, 4, applies_mats = TRUE),
 	)
 
 ///Ran on initialize, populated the materials and materials_by_category dictionaries with their appropiate vars (See these variables for more info)

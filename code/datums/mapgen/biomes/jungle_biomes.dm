@@ -9,15 +9,13 @@
 		/obj/structure/flora/junglebush/b = 1,
 		/obj/structure/flora/junglebush/c = 1,
 		/obj/structure/flora/junglebush/large = 1,
-		/obj/structure/spacevine/dense = 5,
-		/obj/structure/spacevine/dense = 2,
 	)
 	flora_spawn_chance = 90
-	mob_spawn_chance = 0.3
-	mob_spawn_list = list(/mob/living/carbon/monkey = 5)
+	mob_spawn_chance = 0.6
+	mob_spawn_list = list(/mob/living/carbon/monkey = 5, /mob/living/simple_animal/butterfly = 5, /mob/living/simple_animal/deer = 4, /mob/living/simple_animal/chicken/rabbit = 5, /mob/living/simple_animal/chicken = 2, /mob/living/simple_animal/chick = 2)
 
 /datum/biome/jungle/dense
-	flora_spawn_chance = 100
+	flora_spawn_chance = 90
 	open_turf_types = list(/turf/open/floor/plating/grass/jungle/lit = 1, /turf/open/floor/plating/dirt/jungle/dark/lit = 9)
 	flora_spawn_list = list(
 		/obj/structure/flora/grass/jungle = 1,
@@ -28,16 +26,15 @@
 		/obj/structure/flora/junglebush/b = 1,
 		/obj/structure/flora/junglebush/c = 1,
 		/obj/structure/flora/junglebush/large = 1,
-		/obj/structure/spacevine/dense = 20,
 	)
 	mob_spawn_chance = 0.6
-	mob_spawn_list = list(/mob/living/simple_animal/hostile/gorilla = 1, /mob/living/carbon/monkey = 3)
+	mob_spawn_list = list(/mob/living/simple_animal/hostile/gorilla = 1, /mob/living/simple_animal/hostile/lizard = 5, /mob/living/simple_animal/hostile/jungle/leaper = 0.5, /mob/living/carbon/monkey = 3, /mob/living/simple_animal/butterfly = 5, /mob/living/simple_animal/deer = 1, /mob/living/simple_animal/chicken/rabbit = 3, /mob/living/simple_animal/chicken = 2, /mob/living/simple_animal/chick = 2)
 
 /datum/biome/jungle/plains
 	open_turf_types = list(/turf/open/floor/plating/grass/jungle/lit = 1)
 	flora_spawn_chance = 50
 	mob_spawn_chance = 1
-	mob_spawn_list = list(/mob/living/carbon/monkey = 1)
+	mob_spawn_list = list(/mob/living/carbon/monkey = 0.5)
 
 /datum/biome/mudlands
 	open_turf_types = list(/turf/open/floor/plating/dirt/jungle/dark/lit = 1)
@@ -49,7 +46,7 @@
 	)
 	flora_spawn_chance = 20
 	mob_spawn_chance = 0.05
-	mob_spawn_list = list(/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 1)
+	mob_spawn_list = list(/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 1, /mob/living/simple_animal/deer = 5, /mob/living/simple_animal/chicken/rabbit = 7, /mob/living/simple_animal/butterfly = 5, /mob/living/simple_animal/chicken = 5, /mob/living/simple_animal/chick = 4)
 
 /datum/biome/jungle_wasteland
 	open_turf_types = list(/turf/open/floor/plating/dirt/jungle/wasteland/lit = 1)
@@ -57,7 +54,7 @@
 /datum/biome/jungle/water
 	open_turf_types = list(/turf/open/water/jungle/lit = 1)
 	mob_spawn_chance = 1
-	mob_spawn_list = list(/mob/living/simple_animal/hostile/carp = 1)
+	mob_spawn_list = list(/mob/living/simple_animal/hostile/carp = 1, /mob/living/simple_animal/beachcarp/salmon = 2, /mob/living/simple_animal/beachcarp/trout = 4, /mob/living/simple_animal/beachcarp/perch = 4, /mob/living/simple_animal/beachcarp/bass = 3)
 	flora_spawn_chance = 1
 	flora_spawn_list = list(/obj/structure/flora/rock = 1)
 

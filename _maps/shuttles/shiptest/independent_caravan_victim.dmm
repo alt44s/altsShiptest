@@ -354,6 +354,7 @@
 /obj/machinery/power/apc/auto_name/south,
 /obj/machinery/power/terminal,
 /obj/structure/cable,
+/obj/item/reagent_containers/food/drinks/waterbottle/large,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "mZ" = (

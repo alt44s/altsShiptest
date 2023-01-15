@@ -2,7 +2,6 @@
 
 /datum/map_template/ruin/space
 	prefix = "_maps/RandomRuins/SpaceRuins/"
-	cost = 1
 	allow_duplicates = FALSE
 
 /datum/map_template/ruin/space/corporate_mining
@@ -174,3 +173,10 @@
 	suffix = "lab4071.dmm"
 	name = "Syndicate Laboratory 4071"
 	description = "A Syndicate laboratory run by syndicate scientists."
+
+
+/datum/map_template/ruin/space/spacemall
+	id = "spacemall"
+	suffix = "spacemall.dmm"
+	name = "Space Mall"
+	description = "An old shopping centre, owned by a former member of Nanotrasen's board of directors.."

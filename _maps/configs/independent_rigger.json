@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Riggs-class Sloop",
+	"map_name": "Independent Riggs-class Sloop",
 	"prefix": "SV",
 	"namelists": ["GENERAL", "SPACE", "NATURAL", "NATURAL_AGGRESSIVE"],
 	"map_short_name": "Riggs-class",

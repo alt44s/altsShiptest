@@ -82,14 +82,16 @@
 /turf/closed/wall/mineral/titanium/interior,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "ar" = (
-/obj/structure/shuttle/engine/propulsion/burst/right{
-	dir = 1
+/obj/structure/closet/crate/secure/loot,
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "as" = (
-/obj/structure/shuttle/engine/propulsion/burst/left{
-	dir = 1
+/obj/machinery/power/shuttle/engine/electric,
+/obj/structure/cable{
+	icon_state = "0-2"
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
@@ -120,9 +122,10 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/structure/shuttle/engine/heater{
+/obj/machinery/power/smes/shuttle/precharged{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "ay" = (
@@ -132,9 +135,10 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/shuttle/engine/heater{
+/obj/machinery/power/smes/shuttle/precharged{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "az" = (
@@ -162,11 +166,23 @@
 "aE" = (
 /obj/structure/closet/crate/medical,
 /obj/item/storage/firstaid/o2,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "aF" = (
 /obj/structure/closet/crate/medical,
 /obj/item/storage/firstaid/regular,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "aG" = (
@@ -177,6 +193,12 @@
 "aH" = (
 /obj/structure/closet/crate/engineering,
 /obj/item/storage/toolbox/mechanical,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "aI" = (
@@ -184,6 +206,9 @@
 /obj/item/storage/toolbox/electrical,
 /obj/item/stock_parts/cell/hyper,
 /obj/item/stock_parts/cell/high,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "aJ" = (
@@ -221,6 +246,12 @@
 /obj/item/clothing/head/radiation,
 /obj/item/clothing/suit/radiation,
 /obj/item/geiger_counter,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "aR" = (
@@ -239,6 +270,9 @@
 	color = "#4BAE56";
 	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
 	name = "gelatinous floor"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
@@ -304,6 +338,9 @@
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "bf" = (
 /obj/effect/decal/cleanable/blood/old,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "bg" = (
@@ -546,7 +583,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/space/has_grav/derelictoutpost/dockedship)
 "bM" = (
-/obj/machinery/computer{
+/obj/machinery/computer/helm{
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium/blue,
@@ -1935,6 +1972,17 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
+"rn" = (
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/ruin/space/has_grav/derelictoutpost/dockedship)
 "rB" = (
 /obj/structure/closet/crate,
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -1977,6 +2025,21 @@
 /obj/item/stack/cable_coil,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/derelictoutpost)
+"wB" = (
+/obj/structure/closet/crate/internals,
+/obj/item/storage/toolbox/emergency,
+/obj/item/clothing/mask/breath,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/clothing/mask/breath,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/ruin/space/has_grav/derelictoutpost/dockedship)
 "wC" = (
 /obj/structure/closet/crate/engineering/electrical,
 /obj/item/storage/toolbox/electrical,
@@ -2042,6 +2105,18 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
+"Bw" = (
+/obj/structure/alien/weeds{
+	color = "#4BAE56";
+	desc = "A thick gelatinous surface covers the floor.  Someone get the golashes.";
+	name = "gelatinous floor"
+	},
+/obj/machinery/power/apc/auto_name/west,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/ruin/space/has_grav/derelictoutpost/dockedship)
 "Dm" = (
 /obj/structure/closet/crate/medical,
 /obj/item/storage/firstaid/regular,
@@ -2092,6 +2167,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/derelictoutpost)
+"II" = (
+/obj/structure/closet/crate/engineering,
+/obj/item/storage/toolbox/mechanical,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/ruin/space/has_grav/derelictoutpost/dockedship)
 "KJ" = (
 /obj/structure/closet/crate/internals,
 /obj/item/tank/internals/emergency_oxygen/engi,
@@ -2100,6 +2186,19 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
+"Lk" = (
+/obj/structure/closet/crate/engineering/electrical,
+/obj/item/storage/toolbox/electrical,
+/obj/item/stock_parts/cell/hyper,
+/obj/item/stock_parts/cell/high,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/mineral/titanium/yellow,
+/area/ruin/space/has_grav/derelictoutpost/dockedship)
 "LB" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -2606,12 +2705,12 @@ ae
 ag
 ae
 am
-ar
+as
 ax
 aE
+ar
 aO
-aO
-be
+Bw
 bu
 be
 at
@@ -2645,7 +2744,7 @@ am
 as
 ay
 aF
-aP
+wB
 aP
 bf
 be
@@ -2683,7 +2782,7 @@ at
 aG
 aQ
 aU
-be
+rn
 bv
 bM
 cc
@@ -2714,9 +2813,9 @@ ae
 ag
 ae
 am
-ar
+as
 ax
-aH
+II
 aH
 aV
 bg
@@ -2752,7 +2851,7 @@ ae
 am
 as
 ay
-aI
+Lk
 aI
 aW
 bh

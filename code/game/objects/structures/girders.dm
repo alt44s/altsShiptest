@@ -1,7 +1,8 @@
 /obj/structure/girder
 	name = "girder"
 	icon_state = "girder"
-	desc = "A large structural assembly made out of metal; It requires a layer of metal before it can be considered a wall."
+	desc = "A large structural assembly; It requires a layer of material before it can be considered a wall."
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR
 	anchored = TRUE
 	density = TRUE
 	var/state = GIRDER_NORMAL

@@ -16,6 +16,7 @@
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | ERT_SPAWN
 	bodytemp_normal = T0C // They have no natural body heat, the environment regulates body temp
 	bodytemp_heat_damage_limit = FIRE_MINIMUM_TEMPERATURE_TO_EXIST // Take damage at fire temp
+	loreblurb = {"Maybe a part of a failed experiment, maybe just a result of severe radiation, these were turned into zombies. However, they managed to regain their higher brain functions, and are able to act like normal humans! They do not feel pain and are very durable, and they also don't need any air whatsoever. Considering their rotten stomachs, they don't need to eat or drink either!"}
 
 	species_chest = /obj/item/bodypart/chest/zombie
 	species_head = /obj/item/bodypart/head/zombie

@@ -1,0 +1,383 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/sign/poster/contraband/syndicate,
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
+"c" = (
+/turf/template_noop,
+/area/template_noop)
+"d" = (
+/obj/machinery/power/smes/shuttle{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/window/plasma/reinforced/spawner/west{
+	dir = 4
+	},
+/obj/structure/window/plasma/reinforced/spawner/west{
+	dir = 1
+	},
+/obj/machinery/door/poddoor/preopen{
+	name = "Engine Shielding";
+	id = "syndi_attack_engi"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"e" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/cryopod,
+/obj/machinery/computer/cryopod{
+	pixel_y = 25
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"h" = (
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/machinery/door/window/westright{
+	color = "#c300ff";
+	dir = 1
+	},
+/obj/structure/closet/wall/red{
+	dir = 1;
+	pixel_y = -30
+	},
+/obj/item/pickaxe/emergency,
+/obj/item/pickaxe/emergency,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/storage/bag/ore{
+	color = "#9a0000";
+	name = "syndicate rubble satchel"
+	},
+/obj/item/t_scanner/adv_mining_scanner/lesser{
+	color = "#ff3131";
+	name = "syndicate emergency terrain scanner";
+	desc = "A scanner that automatically scans surrounding terrain for dangers.\nIt has a speaker that can be toggled with <b>alt+click</b>"
+	},
+/obj/item/flashlight/lantern/syndicate,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"i" = (
+/obj/docking_port/mobile{
+	height = 8;
+	name = "Syndicate Attack Pod";
+	port_direction = 2;
+	preferred_direction = 4;
+	width = 6;
+	dir = 8
+	},
+/obj/structure/catwalk,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"l" = (
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/port_gen/pacman,
+/obj/machinery/door/window/westright{
+	color = "#c300ff";
+	dir = 2
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"m" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"o" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/closet/crate{
+	name = "syndicate vital equipment crate"
+	},
+/obj/item/circuitboard/machine/autolathe,
+/obj/item/storage/box/stockparts/basic,
+/obj/item/storage/toolbox/syndicate,
+/obj/item/storage/firstaid/tactical,
+/obj/item/storage/firstaid/o2,
+/obj/item/storage/backpack/duffelbag/syndie/surgery,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/areaeditor/shuttle,
+/obj/item/clothing/head/welding,
+/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/plasma/five,
+/obj/machinery/button/door{
+	id = "syndi_attack_shutter";
+	pixel_y = 26;
+	name = "window shutters";
+	pixel_x = -7
+	},
+/obj/item/grenade/c4,
+/obj/item/grenade/c4,
+/obj/item/gun/ballistic/automatic/pistol/tec9,
+/obj/item/ammo_box/magazine/tec9,
+/obj/item/ammo_box/magazine/tec9,
+/obj/item/clothing/suit/space/syndicate/black/red,
+/obj/item/grenade/c4/x4,
+/obj/item/clothing/suit/space/syndicate/black/red,
+/obj/item/clothing/head/helmet/space/syndicate/black/red,
+/obj/item/clothing/head/helmet/space/syndicate/black/red,
+/obj/machinery/button/door{
+	id = "syndie_attack_blast";
+	pixel_y = 26;
+	name = "blast doors";
+	pixel_x = 6
+	},
+/obj/machinery/button/door{
+	id = "syndi_attack_engi";
+	pixel_y = 37;
+	name = "engine shields"
+	},
+/obj/item/kitchen/knife/combat/survival,
+/obj/item/tank/jetpack/oxygen/harness,
+/obj/item/tank/jetpack/oxygen/harness,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"p" = (
+/obj/machinery/computer/helm{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/transparent/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/transparent/neutral,
+/obj/effect/turf_decal/corner/transparent/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/neutral{
+	dir = 1
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"q" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"s" = (
+/obj/effect/turf_decal/corner/transparent/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/transparent/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/transparent/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/neutral,
+/obj/machinery/light/floor,
+/obj/machinery/computer/crew/syndie{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"v" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"w" = (
+/obj/structure/catwalk,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"y" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/hatch{
+	id_tag = "caravansyndicate3_bolt_port";
+	name = "External Airlock";
+	normalspeed = 0;
+	req_access_txt = null
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"A" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"E" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"F" = (
+/obj/machinery/power/apc/auto_name/south{
+	pixel_y = -26
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"G" = (
+/obj/item/radio/intercom/wideband{
+	pixel_y = 25
+	},
+/obj/structure/table/reinforced,
+/obj/item/gps{
+	gpstag = "SyndiPod";
+	color = "#ff3131"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"I" = (
+/obj/machinery/door/poddoor{
+	id = "syndie_attack_blast";
+	name = "Syndicate Attack Pod Blast Doors"
+	},
+/obj/structure/fans/tiny,
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"P" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"S" = (
+/obj/machinery/power/smes/shuttle{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/window/plasma/reinforced/spawner/west{
+	dir = 4
+	},
+/obj/structure/window/plasma/reinforced/spawner/west{
+	dir = 2
+	},
+/obj/machinery/door/poddoor/preopen{
+	name = "engine shielding";
+	id = "syndi_attack_engi"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"T" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
+"U" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "syndi_attack_shutter";
+	name = "Window Shutters"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Z" = (
+/obj/machinery/door/poddoor{
+	id = "syndie_attack_blast";
+	name = "Syndicate Attack Pod Blast Doors"
+	},
+/obj/structure/fans/tiny,
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+
+(1,1,1) = {"
+c
+T
+U
+U
+T
+c
+"}
+(2,1,1) = {"
+c
+U
+s
+p
+U
+c
+"}
+(3,1,1) = {"
+c
+T
+G
+q
+a
+c
+"}
+(4,1,1) = {"
+c
+T
+o
+P
+y
+c
+"}
+(5,1,1) = {"
+T
+m
+e
+F
+m
+T
+"}
+(6,1,1) = {"
+m
+l
+A
+E
+h
+m
+"}
+(7,1,1) = {"
+m
+S
+Z
+I
+d
+m
+"}
+(8,1,1) = {"
+m
+v
+i
+w
+v
+m
+"}

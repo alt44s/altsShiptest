@@ -713,6 +713,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /obj/item/lighter/greyscale
 	name = "cheap lighter"
 	desc = "A cheap lighter."
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR
 	icon_state = "lighter"
 	fancy = FALSE
 	overlay_list = list(

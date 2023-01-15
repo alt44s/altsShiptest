@@ -1293,9 +1293,12 @@
 
 /mob/living/carbon/human/proc/adjust_thirst(change, max = THIRST_LEVEL_FULL)
 	var/min = 0
+	var/mob/living/carbon/human/H = usr
 	if(!client || (client && (client.inactivity / 600 > 5))) // AFK people don't drop thirst below critical point.
 		if(thirst >= THIRST_LEVEL_THIRSTY) // No gaming
 			min = THIRST_LEVEL_THIRSTY
+	if(iszombie(H) || isskeleton(H) || isipc(H))
+		min = THIRST_LEVEL_FULL
 	thirst = clamp(thirst + change, min, max)
 
 ///Force set the mob thirst level

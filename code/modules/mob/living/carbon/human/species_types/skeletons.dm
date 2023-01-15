@@ -15,6 +15,7 @@
 	//They can technically be in an ERT
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | ERT_SPAWN
 	species_language_holder = /datum/language_holder/skeleton
+	loreblurb = {"At one point or another these probably had skin. Either by magic or science, they are now a fully functioning organism capable of anything a human can do. They thrive on milk and do not need neither food nor water to sustain themselves."}
 
 	species_chest = /obj/item/bodypart/chest/skeleton
 	species_head = /obj/item/bodypart/head/skeleton

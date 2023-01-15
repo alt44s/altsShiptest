@@ -7,5 +7,7 @@
 
 <h2 style="color:darkblue;"><strong>Some changes to this fork include:</strong></h2>
 <p><strong>1. New and previously disabled ships</strong></p>
-<p><strong>2. New mechanics</strong></p>
-<p><strong>3. General modifications</strong></p>
+<p><strong>2. CLONING!!!!!</strong></p>
+<p><strong>3. New mechanics</strong></p>
+<p><strong>4. Resprites</strong></p>
+<p><strong>5. General modifications</strong></p>

@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 	"prefix": "SEV",
 	"namelists": ["GENERAL", "NATURAL", "BEASTS", "ENGINEERING"],
-	"map_name": "Kugelblitz-class Experimental Vessel",
+	"map_name": "Syndicate Kugelblitz-class Experimental Vessel",
 	"map_short_name": "Kugelblitz-class",
 	"map_path": "_maps/shuttles/shiptest/syndicate_kugelblitz.dmm",
 	"limit": 1,

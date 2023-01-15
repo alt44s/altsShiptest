@@ -1136,3 +1136,10 @@
 	time = 4 SECONDS
 	reqs = list(/obj/item/strange_crystal = 2)
 	category = CAT_MISC
+
+/datum/crafting_recipe/drinkingglass
+	name = "Drinking Glass"
+	result = /obj/item/reagent_containers/food/drinks/drinkingglass
+	time = 1 SECONDS
+	reqs = list(/obj/item/stack/sheet/glass = 1)
+	category = CAT_DRINK

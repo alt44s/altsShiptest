@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Carina-Class Patrol Cutter",
+	"map_name": "Minutemen Carina-Class Patrol Cutter",
 	"prefix": "CMSV",
 	"namelists": ["GENERAL", "BRITISH_NAVY", "MYTHOLOGICAL", "BEASTS"],
 	"map_short_name": "Carina-class",

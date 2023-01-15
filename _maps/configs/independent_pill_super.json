@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Pill Class-R(adioactive) Execution Device",
+	"map_name": "Independent Pill Class-R(adioactive) Execution Device",
 	"prefix": null,
 	"namelists": ["PILLS"],
 	"map_short_name": "Superpill-class",

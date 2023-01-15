@@ -85,6 +85,7 @@
 /obj/item/clothing/glasses/sunglasses/big{
 	name = "aesthetic sunglasses"
 	},
+/obj/item/a_gift/anything,
 /turf/open/floor/plasteel/vaporwave,
 /area/ruin/space/has_grav/powered/aesthetic)
 "t" = (
@@ -217,6 +218,10 @@
 	initial_gas_mix = "TEMP=2.7"
 	},
 /area/ruin/unpowered/no_grav)
+"S" = (
+/mob/living/carbon/monkey,
+/turf/open/floor/plasteel/vaporwave,
+/area/ruin/space/has_grav/powered/aesthetic)
 
 (1,1,1) = {"
 a
@@ -363,7 +368,7 @@ f
 k
 k
 k
-k
+S
 k
 f
 D

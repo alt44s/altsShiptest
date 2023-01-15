@@ -3,6 +3,7 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass
 	name = "drinking glass"
 	desc = "Your standard drinking glass."
+	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR
 	icon_state = "glass_empty"
 	amount_per_transfer_from_this = 10
 	volume = 50

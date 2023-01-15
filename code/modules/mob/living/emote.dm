@@ -47,16 +47,18 @@
 	key_third_person = "burps"
 	message = "burps."
 	sound = 'sound/voice/burp.ogg'
-	cooldown = (1 SECONDS)
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/fart
 	key = "fart"
 	key_third_person = "farts"
 	message = "farts."
-	sound = 'sound/voice/fart.ogg'
-	cooldown = (1 SECONDS)
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/fart/run_emote(mob/user, params,  type_override, intentional)
+	. = ..()
+	if(.)
+		playsound(user, 'sound/voice/fart.ogg', 50, 1, -1)
 
 /datum/emote/laugh2
 	key = "laugh2"
@@ -101,9 +103,13 @@
 	key = "breakbad"
 	key_third_person = "breaks bad"
 	message = "breaks bad."
-	sound = 'sound/voice/breakbad.ogg'
 	cooldown = (30 SECONDS)
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/breakbad/run_emote(mob/user, params,  type_override, intentional)
+	. = ..()
+	if(.)
+		playsound(user, 'sound/voice/breakbad.ogg', 50, 1, -1)
 
 /datum/emote/living/choke
 	key = "choke"

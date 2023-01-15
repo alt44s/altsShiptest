@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Tranquility-class Flying Apartment Complex",
+	"map_name": "Independent Tranquility-class Flying Apartment Complex",
 	"prefix": "ISV",
 	"namelists": ["GENERAL", "SPACE", "NATURAL"],
 	"map_short_name": "Tranquility-class",

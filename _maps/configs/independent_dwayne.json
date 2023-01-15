@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Dwayne-class Long Range Mining Transport",
+	"map_name": "Independent Dwayne-class Long Range Mining Transport",
 	"prefix": "SV",
 	"namelists": ["GENERAL", "SPACE", "NATURAL", "MERCANTILE"],
 	"map_short_name": "Dwayne-class",

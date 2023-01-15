@@ -11,6 +11,9 @@
 /area/ship/construction)
 "ci" = (
 /obj/item/stock_parts/cell/high,
+/obj/structure/sink/kitchen{
+	pixel_y = 25
+	},
 /turf/open/floor/plating,
 /area/ship/construction)
 "ck" = (

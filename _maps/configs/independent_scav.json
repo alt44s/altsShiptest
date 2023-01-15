@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Scav-class Drifter",
+	"map_name": "Independent Scav-class Drifter",
 	"map_short_name": "Scav-class",
 	"prefix": "ISV",
 	"namelists": ["BEASTS", "SPACE"],

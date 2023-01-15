@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Meta-class Freighter",
+	"map_name": "Independent Meta-class Freighter",
 	"map_short_name": "Meta-class",
 	"map_path": "_maps/shuttles/shiptest/independent_meta.dmm",
 	"job_slots": {

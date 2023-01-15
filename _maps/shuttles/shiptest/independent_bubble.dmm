@@ -366,6 +366,10 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/purple/border,
+/obj/structure/sink/kitchen{
+	dir = 4;
+	pixel_x = -12
+	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "rj" = (

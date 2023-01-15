@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Cascade-Class Genetics Vessel",
+	"map_name": "Syndicate Cascade-Class Genetics Vessel",
 	"prefix": "SSV",
 	"namelists": ["GENERAL", "NATURAL_AGGRESSIVE"],
 	"map_short_name": "Cascade-class",

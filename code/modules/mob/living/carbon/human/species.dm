@@ -1378,7 +1378,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 //LIFE//
 ////////
 /datum/species/proc/handle_digestion(mob/living/carbon/human/H)
-	if(HAS_TRAIT(src, TRAIT_NOHUNGER))
+	if(HAS_TRAIT(src, TRAIT_NOHUNGER) || iszombie(H) || isskeleton(H))
 		return //hunger is for BABIES
 
 	//The fucking TRAIT_FAT mutation is the dumbest shit ever. It makes the code so difficult to work with
@@ -1419,7 +1419,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		hunger_rate *= H.physiology.hunger_mod
 		H.adjust_nutrition(-hunger_rate)
 
-	if(H.stat != DEAD)
+	if(H.stat != DEAD || !iszombie(H) || !isskeleton(H) || !isipc(H))
 		H.adjust_thirst(-THIRST_FACTOR)
 		handle_thirst(H)
 		handle_hunger_damage(H)
@@ -1490,9 +1490,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				H.adjustStaminaLoss(25, 0)
 			if(prob(8))
 				to_chat(H, "<span class='danger'>Your insides hurt a lot!</span>") // Give me better descriptions...
-				H.adjustBruteLoss(3, 0)
-			if(prob(33))
-				H.adjustToxLoss(1, 0)
 	return
 
 /datum/species/proc/handle_thirst(mob/living/carbon/human/H)
@@ -1514,8 +1511,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			if((H.getStaminaLoss() <= 90) && prob(12))
 				to_chat(H, "<span class='warning'>You feel weak...</span>")
 				H.adjustStaminaLoss(20, 0)
-			if(prob(33))
-				H.adjustToxLoss(1, 0)
 	return
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)

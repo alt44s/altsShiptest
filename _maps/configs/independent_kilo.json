@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Kilo-class Mining Ship",
+	"map_name": "Independent Kilo-class Mining Ship",
 	"prefix": "SV",
 	"namelists": ["GENERAL", "SPACE", "NATURAL", "NATURAL_AGGRESSIVE"],
 	"map_short_name": "Kilo-class",

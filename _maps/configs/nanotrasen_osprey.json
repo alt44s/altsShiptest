@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Osprey-class Exploration Ship",
+	"map_name": "Nanotrasen Osprey-class Exploration Ship",
 	"prefix": "NTSV",
 	"namelists": [
 		"GENERAL",

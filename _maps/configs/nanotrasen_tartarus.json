@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Tartarus-class Military Carrier",
+	"map_name": "Nanotrasen Tartarus-class Military Carrier",
 	"prefix": "NTSV",
 	"namelists": ["GENERAL", "BRITISH_NAVY", "MYTHOLOGICAL", "WEAPONS"],
 	"map_short_name": "Tartarus-class",

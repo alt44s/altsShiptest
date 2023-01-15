@@ -1,0 +1,13 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Syndicate Pod-Class Attacker",
+	"map_short_name": "Syndie Attack Pod",
+	"map_path": "_maps/shuttles/shiptest/syndicate_attack_pod.dmm",
+	"job_slots": {
+		"Agent": {
+			"outfit": "/datum/outfit/job/assistant/syndicate",
+			"slots": 3
+		}
+	},
+	"enabled": true
+}

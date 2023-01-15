@@ -117,11 +117,11 @@
 		DYNAMIC_WORLD_ICE = min(length(SSmapping.ice_ruins_templates), 20),
 		DYNAMIC_WORLD_JUNGLE = min(length(SSmapping.jungle_ruins_templates), 20),
 		DYNAMIC_WORLD_SAND = min(length(SSmapping.sand_ruins_templates), 20),
-		DYNAMIC_WORLD_SPACERUIN = min(length(SSmapping.space_ruins_templates), 20),
+		DYNAMIC_WORLD_SPACERUIN = min(length(SSmapping.space_ruins_templates), 40),
 		DYNAMIC_WORLD_WASTEPLANET = min(length(SSmapping.waste_ruins_templates), 20),
 		DYNAMIC_WORLD_ROCKPLANET = min(length(SSmapping.rock_ruins_templates), 20),
 		DYNAMIC_WORLD_BEACHPLANET = min(length(SSmapping.beach_ruins_templates), 20),
-		//DYNAMIC_WORLD_REEBE = 0, //unspawnable because of major lack of skill. //you fucking probablitiy zero does not equal one you dumbass
+		DYNAMIC_WORLD_REEBE = 3, //unspawnable because of major lack of skill. //you fucking probablitiy zero does not equal one you dumbass
 		DYNAMIC_WORLD_ASTEROID = 30)
 
 	if(force_encounter)
@@ -307,7 +307,7 @@
 /area/overmap_encounter
 	name = "\improper Overmap Encounter"
 	icon_state = "away"
-	area_flags = HIDDEN_AREA | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | NOTELEPORT
+	area_flags = HIDDEN_AREA | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
 	flags_1 = CAN_BE_DIRTY_1
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	sound_environment = SOUND_ENVIRONMENT_STONEROOM

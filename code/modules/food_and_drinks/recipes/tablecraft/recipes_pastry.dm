@@ -48,6 +48,13 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/donut/jelly/slimejelly/plain
 
+/datum/crafting_recipe/food/croissant
+	reqs = list(
+		/datum/reagent/consumable/sugar = 5,
+		/obj/item/reagent_containers/food/snacks/dough = 1,
+		/obj/item/reagent_containers/food/snacks/egg = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/croissant
 
 /datum/crafting_recipe/food/donut/berry
 	name = "Berry Donut"

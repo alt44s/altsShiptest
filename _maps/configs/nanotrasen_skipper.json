@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Skipper-class Heavy Cruiser",
+	"map_name": "Nanotrasen Skipper-class Heavy Cruiser",
 	"map_short_name": "Skipper-class",
 	"prefix": "NTSV",
 	"namelists": [

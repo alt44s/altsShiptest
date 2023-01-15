@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Delta-class Frigate",
+	"map_name": "Nanotrasen Delta-class Frigate",
 	"prefix": "NTSV",
 	"namelists": [
 		"GENERAL",

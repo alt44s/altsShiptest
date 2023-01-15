@@ -1319,11 +1319,14 @@
 	H.open_language_menu(usr)
 
 ///Adjust the nutrition of a mob
-/mob/proc/adjust_nutrition(change, max = INFINITY) //Honestly FUCK the oldcoders for putting nutrition on /mob someone else can move it up because holy hell I'd have to fix SO many typechecks
+/mob/proc/adjust_nutrition(change, max = INFINITY, mob/living/carbon/human) //Honestly FUCK the oldcoders for putting nutrition on /mob someone else can move it up because holy hell I'd have to fix SO many typechecks
 	var/min = 0
+	var/mob/living/carbon/human/H = usr
 	if(!client || (client && (client.inactivity / 600 > 5))) // Fuck oldcoders and all that, but let's not kill AFK people
 		if(nutrition >= NUTRITION_LEVEL_STARVING) // So you can't game the system by going AFK and regaining all nutrition
 			min = NUTRITION_LEVEL_STARVING
+	if(iszombie(H) || isskeleton(H))
+		min = NUTRITION_LEVEL_FED
 	nutrition = clamp(nutrition + change, min, max)
 
 ///Force set the mob nutrition

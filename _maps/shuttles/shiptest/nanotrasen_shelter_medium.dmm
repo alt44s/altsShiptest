@@ -1,59 +1,37 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"a" = (
-/turf/closed/wall/mineral/titanium/survival/pod,
-/area/ship/storage)
-"b" = (
-/turf/template_noop,
-/area/template_noop)
-"c" = (
-/obj/machinery/light,
-/turf/open/floor/carpet/black,
-/area/ship/storage)
-"d" = (
-/obj/structure/cable{
-	icon_state = "2-8"
+"eF" = (
+/obj/structure/window/reinforced/survival_pod{
+	dir = 8;
+	layer = 3
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light{
+/obj/machinery/door/window/survival_pod{
 	dir = 1
 	},
-/obj/structure/closet/crate/science,
-/obj/item/circuitboard/machine/protolathe/department/cargo,
-/obj/item/clothing/glasses/science,
-/obj/item/reagent_scanner,
-/obj/item/circuitboard/machine/rdserver,
-/obj/item/circuitboard/machine/circuit_imprinter,
-/obj/item/circuitboard/machine/autolathe,
-/obj/item/storage/box/stockparts/basic,
-/obj/item/circuitboard/computer/rdconsole,
+/turf/open/floor/carpet/black,
+/area/ship/storage)
+"eL" = (
+/obj/machinery/mineral/ore_redemption{
+	dir = 1
+	},
+/obj/machinery/door/window/northright{
+	dir = 2
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/pod,
+/area/ship/storage)
+"eZ" = (
+/obj/machinery/power/terminal,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/storage)
-"e" = (
-/obj/structure/table/wood/fancy/black,
-/obj/item/reagent_containers/food/drinks/drinkingglass{
-	pixel_x = 7;
-	pixel_y = 2
-	},
-/obj/effect/spawner/lootdrop/three_course_meal,
-/turf/open/floor/carpet/black,
+"fF" = (
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/plating,
 /area/ship/storage)
-"f" = (
-/obj/structure/sign/mining/survival{
-	dir = 8
-	},
-/turf/closed/wall/mineral/titanium/survival/pod,
-/area/ship/storage)
-"g" = (
-/obj/structure/sink/kitchen{
-	dir = 4;
-	pixel_x = -13
-	},
-/obj/machinery/airalarm/directional/south,
-/turf/open/floor/carpet/black,
-/area/ship/storage)
-"h" = (
+"gN" = (
 /obj/structure/window/reinforced/survival_pod{
 	dir = 8
 	},
@@ -62,26 +40,69 @@
 	},
 /turf/open/floor/carpet/black,
 /area/ship/storage)
-"i" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/open/floor/carpet/black,
-/area/ship/storage)
-"j" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
+"hh" = (
+/obj/machinery/button/door{
+	dir = 1;
+	id = "shelter_med_engi";
+	name = "engine emergency shielding";
+	pixel_y = -25
 	},
 /turf/open/floor/plating,
 /area/ship/storage)
-"k" = (
-/obj/structure/sign/mining/survival,
+"jq" = (
+/obj/machinery/cryopod{
+	dir = 4
+	},
+/obj/machinery/computer/cryopod{
+	dir = 4;
+	pixel_x = -25
+	},
+/turf/open/floor/pod,
+/area/ship/storage)
+"kw" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/ship/storage)
+"kH" = (
+/turf/open/floor/pod,
+/area/ship/storage)
+"mu" = (
+/obj/machinery/door/window/survival_pod{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/carpet/black,
+/area/ship/storage)
+"nc" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/carpet/black,
+/area/ship/storage)
+"nx" = (
+/obj/structure/sign/mining,
 /turf/closed/wall/mineral/titanium/survival/pod,
 /area/ship/storage)
-"l" = (
+"nU" = (
+/obj/machinery/power/port_gen/pacman,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/item/wrench,
+/turf/open/floor/plating,
+/area/ship/storage)
+"oM" = (
+/obj/item/gps/computer,
+/turf/open/floor/pod,
+/area/ship/storage)
+"oQ" = (
+/obj/structure/fans,
+/turf/open/floor/pod,
+/area/ship/storage)
+"qE" = (
 /obj/machinery/power/terminal{
 	dir = 8
 	},
@@ -104,125 +125,23 @@
 /obj/item/pickaxe/mini,
 /obj/item/stack/sheet/mineral/sandbags,
 /obj/item/storage/box/emptysandbags,
+/obj/item/tank/jetpack/carbondioxide,
+/obj/item/tank/jetpack/carbondioxide,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
 /turf/open/floor/plating,
 /area/ship/storage)
-"m" = (
-/obj/structure/chair/comfy/black,
-/obj/item/cardboard_cutout{
-	desc = "A cardboard cutout of a xenomorph maid.";
-	icon_state = "cutout_lusty";
-	name = "lusty xenomorph maid"
-	},
+"qY" = (
 /obj/structure/window/reinforced/survival_pod{
-	dir = 1
+	density = 0;
+	dir = 9
 	},
-/turf/open/floor/carpet/black,
-/area/ship/storage)
-"n" = (
-/obj/structure/sign/poster/contraband/lusty_xenomorph,
-/turf/closed/wall/mineral/titanium/survival/pod,
-/area/ship/storage)
-"o" = (
-/obj/structure/fans/tiny,
-/obj/machinery/door/airlock/survival_pod/glass,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/pod,
-/area/ship/storage)
-"p" = (
-/obj/machinery/power/smes,
-/turf/open/floor/plating,
-/area/ship/storage)
-"q" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/suit_storage_unit/independent/mining/eva,
-/turf/open/floor/plating,
-/area/ship/storage)
-"r" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plating,
-/area/ship/storage)
-"s" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/open/floor/plating,
-/area/ship/storage)
-"t" = (
-/obj/machinery/microwave{
-	pixel_y = -2
-	},
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
-/obj/structure/table/wood/fancy/black{
-	pixel_y = -9
-	},
 /turf/open/floor/carpet/black,
 /area/ship/storage)
-"u" = (
-/turf/open/floor/pod,
-/area/ship/storage)
-"v" = (
-/obj/structure/window/reinforced/survival_pod{
-	dir = 1
-	},
-/obj/structure/displaycase{
-	alert = 0;
-	desc = "A display case containing an expensive forgery, probably.";
-	pixel_y = -4;
-	req_access_txt = "48";
-	start_showpiece_type = /obj/item/fakeartefact
-	},
-/turf/open/floor/carpet/black,
-/area/ship/storage)
-"w" = (
-/obj/machinery/power/terminal,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/ship/storage)
-"x" = (
-/obj/structure/closet/crate,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/stack/sheet/mineral/plasma/five,
-/obj/item/storage/box/lights/bulbs,
-/obj/item/stack/sheet/mineral/titanium/twenty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/storage/toolbox/electrical,
-/turf/open/floor/plating,
-/area/ship/storage)
-"y" = (
-/obj/machinery/door/airlock/external/glass,
-/obj/docking_port/mobile{
-	can_move_docking_ports = 1;
-	dir = 2
-	},
-/obj/structure/fans/tiny,
-/turf/open/floor/plating,
-/area/ship/storage)
-"z" = (
-/obj/structure/sign/mining,
-/turf/closed/wall/mineral/titanium/survival/pod,
-/area/ship/storage)
-"A" = (
+"sb" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 1
 	},
@@ -235,9 +154,83 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/door/poddoor/preopen{
+	id = "shelter_med_engi";
+	name = "Emergency Engine Shielding"
+	},
 /turf/open/floor/plating,
 /area/ship/storage)
-"B" = (
+"tg" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating,
+/area/ship/storage)
+"tv" = (
+/obj/structure/sign/mining/survival{
+	dir = 4
+	},
+/turf/closed/wall/mineral/titanium/survival/pod,
+/area/ship/storage)
+"tT" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship/storage)
+"tW" = (
+/obj/structure/bed/pod,
+/obj/item/bedsheet/black,
+/turf/open/floor/pod,
+/area/ship/storage)
+"uw" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/ship/storage)
+"yq" = (
+/obj/structure/sign/poster/contraband/lusty_xenomorph,
+/turf/closed/wall/mineral/titanium/survival/pod,
+/area/ship/storage)
+"zK" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/closet/crate/science,
+/obj/item/circuitboard/machine/protolathe/department/cargo,
+/obj/item/circuitboard/machine/rdserver,
+/obj/item/circuitboard/machine/circuit_imprinter,
+/obj/item/circuitboard/machine/autolathe,
+/obj/item/storage/box/stockparts/basic,
+/obj/item/circuitboard/computer/rdconsole,
+/turf/open/floor/plating,
+/area/ship/storage)
+"Ap" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/docking_port/mobile{
+	can_move_docking_ports = 1;
+	height = 11;
+	width = 11;
+	name = "Nanotrasen Medium Shelter Shuttle";
+	port_direction = 2
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/ship/storage)
+"Bb" = (
 /obj/structure/table/survival_pod,
 /obj/item/storage/firstaid/regular,
 /obj/item/storage/firstaid/brute{
@@ -245,75 +238,161 @@
 	},
 /turf/open/floor/pod,
 /area/ship/storage)
-"C" = (
+"Bp" = (
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/ship/storage)
-"D" = (
+"BS" = (
+/obj/structure/sign/mining/survival{
+	dir = 8
+	},
+/turf/closed/wall/mineral/titanium/survival/pod,
+/area/ship/storage)
+"Eb" = (
+/obj/machinery/light,
+/turf/open/floor/carpet/black,
+/area/ship/storage)
+"En" = (
+/turf/closed/wall/mineral/titanium/survival/pod,
+/area/ship/storage)
+"Gc" = (
+/obj/machinery/shower,
+/obj/item/soap/deluxe,
+/obj/structure/curtain{
+	alpha = 240;
+	color = "#454545";
+	icon_state = "bathroom-closed";
+	open = 0
+	},
+/turf/open/floor/pod,
+/area/ship/storage)
+"Gf" = (
+/obj/structure/sign/mining/survival,
+/turf/closed/wall/mineral/titanium/survival/pod,
+/area/ship/storage)
+"Gy" = (
+/obj/structure/toilet/secret{
+	secret_type = /obj/item/kitchen/knife/combat/survival
+	},
+/turf/open/floor/pod,
+/area/ship/storage)
+"IW" = (
+/obj/structure/sign/mining/survival{
+	dir = 1
+	},
+/turf/closed/wall/mineral/titanium/survival/pod,
+/area/ship/storage)
+"IX" = (
+/obj/structure/sink/kitchen{
+	dir = 4;
+	pixel_x = -13
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/carpet/black,
+/area/ship/storage)
+"Kj" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/storage)
+"KE" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ship/storage)
+"LF" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/carpet/black,
+/area/ship/storage)
+"Ng" = (
+/obj/structure/tubes,
+/obj/item/kirbyplants/random,
+/turf/open/floor/pod,
+/area/ship/storage)
+"Oh" = (
+/obj/machinery/power/smes,
+/turf/open/floor/plating,
+/area/ship/storage)
+"Oi" = (
+/obj/structure/table/wood/fancy/black,
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	pixel_x = 7;
+	pixel_y = 2
+	},
+/obj/effect/spawner/lootdrop/three_course_meal,
+/turf/open/floor/carpet/black,
+/area/ship/storage)
+"Ov" = (
+/obj/machinery/microwave{
+	pixel_y = -2
+	},
+/obj/structure/window/reinforced/survival_pod{
+	dir = 1
+	},
+/obj/structure/table/wood/fancy/black{
+	pixel_y = -9
+	},
+/turf/open/floor/carpet/black,
+/area/ship/storage)
+"Pt" = (
+/obj/structure/chair/comfy/black,
+/obj/item/cardboard_cutout{
+	desc = "A cardboard cutout of a xenomorph maid.";
+	icon_state = "cutout_lusty";
+	name = "lusty xenomorph maid"
+	},
+/obj/structure/window/reinforced/survival_pod{
+	dir = 1
+	},
+/turf/open/floor/carpet/black,
+/area/ship/storage)
+"Rb" = (
 /obj/structure/cable,
 /obj/machinery/power/shuttle/engine/electric{
 	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/storage)
-"E" = (
-/obj/machinery/door/airlock/external/glass,
-/obj/structure/fans/tiny,
+"Rc" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/suit_storage_unit/independent/mining/eva,
 /turf/open/floor/plating,
 /area/ship/storage)
-"F" = (
-/obj/machinery/door/window/survival_pod{
-	dir = 1
-	},
-/turf/open/floor/carpet/black,
-/area/ship/storage)
-"G" = (
-/obj/structure/sign/mining/survival{
-	dir = 4
-	},
-/turf/closed/wall/mineral/titanium/survival/pod,
-/area/ship/storage)
-"H" = (
-/obj/machinery/power/port_gen/pacman,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/item/wrench,
-/turf/open/floor/plating,
-/area/ship/storage)
-"I" = (
-/obj/structure/tubes,
-/obj/item/kirbyplants/random,
-/turf/open/floor/pod,
-/area/ship/storage)
-"J" = (
-/obj/structure/sign/mining/survival{
-	dir = 1
-	},
-/turf/closed/wall/mineral/titanium/survival/pod,
-/area/ship/storage)
-"K" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/open/floor/carpet/black,
-/area/ship/storage)
-"L" = (
-/obj/structure/toilet/secret{
-	secret_type = /obj/item/kitchen/knife/combat/survival
-	},
-/turf/open/floor/pod,
-/area/ship/storage)
-"M" = (
-/obj/structure/window/reinforced/survival_pod{
-	density = 0;
-	dir = 9
-	},
+"Sa" = (
+/obj/machinery/door/airlock/survival_pod/glass,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/pod,
+/area/ship/storage)
+"SB" = (
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
 /turf/open/floor/carpet/black,
 /area/ship/storage)
-"N" = (
+"Un" = (
 /obj/machinery/light{
 	dir = 4;
 	light_color = "#DDFFD3"
@@ -337,217 +416,178 @@
 /obj/item/areaeditor/shuttle,
 /turf/open/floor/carpet/black,
 /area/ship/storage)
-"O" = (
-/obj/structure/chair/comfy/black{
-	dir = 1
-	},
-/turf/open/floor/carpet/black,
-/area/ship/storage)
-"P" = (
-/obj/structure/tank_dispenser/oxygen,
-/turf/open/floor/plating,
-/area/ship/storage)
-"Q" = (
-/obj/structure/fans,
-/turf/open/floor/pod,
-/area/ship/storage)
-"R" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship/storage)
-"S" = (
-/obj/machinery/shower,
-/obj/item/soap/deluxe,
-/obj/structure/curtain{
-	alpha = 240;
-	color = "#454545";
-	icon_state = "bathroom-closed";
-	open = 0
-	},
-/turf/open/floor/pod,
-/area/ship/storage)
-"U" = (
-/obj/machinery/cryopod{
-	dir = 4
-	},
-/obj/machinery/computer/cryopod{
-	dir = 4;
-	pixel_x = -25
-	},
-/turf/open/floor/pod,
-/area/ship/storage)
-"V" = (
+"Vz" = (
 /obj/structure/window/reinforced/survival_pod{
-	dir = 8;
-	layer = 3
-	},
-/obj/machinery/door/window/survival_pod{
 	dir = 1
+	},
+/obj/structure/displaycase{
+	alert = 0;
+	desc = "A display case containing an expensive forgery, probably.";
+	pixel_y = -4;
+	req_access_txt = "48";
+	start_showpiece_type = /obj/item/fakeartefact
 	},
 /turf/open/floor/carpet/black,
 /area/ship/storage)
-"W" = (
-/obj/structure/bed/pod,
-/obj/item/bedsheet/black,
-/turf/open/floor/pod,
-/area/ship/storage)
-"X" = (
+"VE" = (
+/turf/template_noop,
+/area/template_noop)
+"Xg" = (
 /obj/machinery/computer/helm,
 /turf/open/floor/pod,
 /area/ship/storage)
-"Y" = (
-/obj/item/gps/computer,
-/turf/open/floor/pod,
-/area/ship/storage)
-"Z" = (
-/obj/machinery/light{
-	dir = 4
-	},
+"Zc" = (
+/obj/structure/closet/crate,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/storage/box/lights/bulbs,
+/obj/item/stack/sheet/mineral/titanium/twenty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/storage/toolbox/electrical,
 /turf/open/floor/plating,
 /area/ship/storage)
 
 (1,1,1) = {"
-b
-b
-b
-b
-b
-b
-a
-a
-G
-a
-a
+VE
+VE
+VE
+VE
+VE
+VE
+En
+En
+tv
+En
+En
 "}
 (2,1,1) = {"
-b
-b
-b
-b
-b
-b
-k
-p
-R
-C
-y
+VE
+VE
+VE
+VE
+VE
+VE
+Gf
+Oh
+Bp
+tT
+Ap
 "}
 (3,1,1) = {"
-a
-f
-a
-f
-a
-f
-a
-l
-C
-a
-z
+En
+BS
+En
+BS
+En
+BS
+En
+qE
+hh
+En
+nx
 "}
 (4,1,1) = {"
-J
-Q
-U
-B
-t
-g
-a
-q
-w
-A
-D
+IW
+oQ
+jq
+Bb
+Ov
+IX
+En
+Rc
+eZ
+sb
+Rb
 "}
 (5,1,1) = {"
-a
-X
-u
-u
-F
-c
-a
-r
-w
-A
-D
+En
+Xg
+kH
+kH
+mu
+Eb
+En
+KE
+eZ
+sb
+Rb
 "}
 (6,1,1) = {"
-z
-Y
-W
-I
-v
-i
-o
-s
-x
-a
-b
+nx
+oM
+tW
+Ng
+Vz
+LF
+Sa
+tg
+Zc
+En
+En
 "}
 (7,1,1) = {"
-a
-S
-V
-h
-M
-K
-a
-j
-w
-A
-D
+En
+Gc
+eF
+gN
+qY
+nc
+eL
+uw
+eZ
+sb
+Rb
 "}
 (8,1,1) = {"
-J
-L
-m
-N
-e
-O
-a
-d
-w
-A
-D
+IW
+Gy
+Pt
+Un
+Oi
+SB
+En
+zK
+eZ
+sb
+Rb
 "}
 (9,1,1) = {"
-a
-G
-a
-a
-n
-G
-a
-H
-C
-a
-z
+En
+tv
+En
+En
+yq
+tv
+En
+nU
+hh
+En
+nx
 "}
 (10,1,1) = {"
-b
-b
-b
-b
-b
-b
-k
-P
-Z
-C
-E
+VE
+VE
+VE
+VE
+VE
+VE
+Gf
+fF
+Kj
+tT
+kw
 "}
 (11,1,1) = {"
-b
-b
-b
-b
-b
-b
-a
-a
-G
-a
-a
+VE
+VE
+VE
+VE
+VE
+VE
+En
+En
+tv
+En
+En
 "}

@@ -3,7 +3,6 @@
 /datum/map_template/ruin/rockplanet
 	prefix = "_maps/RandomRuins/RockRuins/"
 	allow_duplicates = FALSE
-	cost = 5
 
 /datum/map_template/ruin/rockplanet/heirophant
 	name = "Ancient Heirophant"

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Nemo-class Fauna Research Vessel",
+	"map_name": "Independent Nemo-class Fauna Research Vessel",
 	"prefix": "ISV",
 	"namelists": ["NATURAL"],
 	"map_short_name": "Nemo-class",

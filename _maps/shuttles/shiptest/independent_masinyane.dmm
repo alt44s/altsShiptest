@@ -179,9 +179,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "kO" = (
-/obj/structure/fans/tiny{
-	pixel_y = -10
-	},
+/obj/structure/fans/tiny,
 /obj/effect/turf_decal/industrial/stand_clear{
 	dir = 1;
 	layer = 2.09
@@ -458,9 +456,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Iu" = (
-/obj/structure/fans/tiny{
-	pixel_y = -10
-	},
+/obj/structure/fans/tiny,
 /obj/effect/turf_decal/industrial/stand_clear{
 	layer = 2.09
 	},
@@ -508,6 +504,7 @@
 	},
 /obj/item/circuitboard/machine/cell_charger,
 /obj/item/circuitboard/machine/chem_dispenser/drinks,
+/obj/item/storage/box/drinkingglasses,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "LT" = (
@@ -563,6 +560,10 @@
 /obj/machinery/power/terminal{
 	dir = 1
 	},
+/obj/structure/sink/kitchen{
+	dir = 8;
+	pixel_x = 14
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Pn" = (
@@ -612,7 +613,9 @@
 	dir = 10
 	},
 /obj/structure/table/glass,
-/obj/machinery/jukebox/boombox,
+/obj/machinery/jukebox/boombox{
+	pixel_x = 5
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Sm" = (
@@ -658,6 +661,8 @@
 	pixel_x = -4;
 	pixel_y = 4
 	},
+/obj/item/tank/jetpack/carbondioxide,
+/obj/item/tank/jetpack/carbondioxide,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Tq" = (
@@ -698,9 +703,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Xe" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
+/obj/structure/table,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "Xq" = (

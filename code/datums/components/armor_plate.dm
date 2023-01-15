@@ -1,6 +1,6 @@
 /datum/component/armor_plate
-	var/amount = 0
-	var/maxamount = 3
+	var/amount = 3
+	var/maxamount = 6
 	var/upgrade_item = /obj/item/stack/sheet/animalhide/goliath_hide
 	var/datum/armor/added_armor = list("melee" = 10, "bullet" = 5, "laser" = 3, "energy" = 3, "bomb" = 5, "fire" = 10, "acid" = 20)
 	var/upgrade_name

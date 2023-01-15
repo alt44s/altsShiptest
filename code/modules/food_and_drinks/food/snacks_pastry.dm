@@ -882,3 +882,12 @@
 	tastes = list("jelly" = 3, "donut" = 1, "fizzy tutti frutti" = 1)
 	is_decorated = TRUE
 	filling_color = "#803280"
+
+/obj/item/reagent_containers/food/snacks/croissant
+	name = "croissant"
+	desc = "Once a pastry reserved for the bourgeois, this flaky goodness is now on your table."
+	icon_state = "croissant"
+	bitesize = 4
+	filling_color = "#ecb54f"
+	list_reagents = list("nutriment" = 4, "sugar" = 2)
+	tastes = list("croissant" = 1)

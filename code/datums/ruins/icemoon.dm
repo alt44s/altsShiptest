@@ -3,7 +3,6 @@
 /datum/map_template/ruin/icemoon
 	prefix = "_maps/RandomRuins/IceRuins/"
 	allow_duplicates = FALSE
-	cost = 5
 
 // above ground only
 
